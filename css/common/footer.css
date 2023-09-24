@@ -30,6 +30,7 @@ footer.footer div.footer-container div.footer-info div.contact-info {
 
 footer.footer div.footer-container div.footer-info div.contact-info p {
     color: white;
+    line-height: 32px;
 }
 
 footer.footer div.footer-container div.footer-info div.scroll-top a {

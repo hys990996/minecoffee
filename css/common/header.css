@@ -88,7 +88,7 @@ header.header div.header-block div.header-nav ul.nav-list>li a::before {
     opacity: 0;
     white-space: nowrap;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 header.header div.header-block div.header-nav ul.nav-list>li a:hover {
