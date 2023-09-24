@@ -55,19 +55,22 @@ div.section-learn div.section-link {
 
 div.section-learn div.course-block {
     margin-top: 40px;
-    border: 1px dotted brown;
+    /* border: 1px dotted brown; */
     position: relative;
     height: 500px;
+    display: inline-flex;
+    align-items: center;
 }
 
 div.section-learn div.course-block div.course-item {
-    width: 500px;
+    width: 400px;
 }
 
 div.section-learn div.course-block div.course-item.-selected {
-    position: absolute;
+    width: 500px;
+    /* position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0); */
 }
 
 div.section-learn div.course-block div.course-item a {
@@ -76,6 +79,10 @@ div.section-learn div.course-block div.course-item a {
     font-size: 0;
 }
 
+div.section-learn div.course-block div.course-item a img {
+    width: 100%;
+
+}
 
 div.section-learn div.course-block div.course-item div.course-info {
     background-color: rgba(0, 0, 0, 0.30);
@@ -91,12 +98,14 @@ div.section-learn div.course-block div.course-item div.course-info {
     justify-content: center;
 }
 
-div.section-learn div.course-block div.course-item.-selected div.course-info p.course-title {
+div.section-learn div.course-block div.course-item div.course-info p.course-title {
     font-size: 1.5rem;
+    line-height: 42px;
 }
 
-div.section-learn div.course-block div.course-item.-selected div.course-info p.description {
+div.section-learn div.course-block div.course-item div.course-info p.description {
     font-size: 1rem;
+    line-height: 32px;
 }
 
 
