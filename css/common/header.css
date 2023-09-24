@@ -66,14 +66,14 @@ header.header div.header-block div.header-nav ul.nav-list>li a {
     font-size: 1.5rem;
     text-align: center;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 20px;
 }
 
 /* 向下轉軸時更換選單顏色 */
 header.header div.header-block div.header-nav ul.nav-list>li a.scroll {
     color: var(--Dark-orange);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 /* 製作hover效果 */

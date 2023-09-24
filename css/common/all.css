@@ -16,8 +16,8 @@
 /* ========== 字體初始化 ========== */
 body,
 div {
-    /* font-family: 'Catamaran', 'Noto Sans TC', '微軟正黑體', 'Microsoft JhengHei'; */
-    font-family: 'Catamaran', '-apple-system', 'Noto Sans TC', 'sans-serif';
+    font-family: 'Noto Sans TC', '微軟正黑體', 'Microsoft JhengHei';
+    /* font-family: 'Catamaran', '-apple-system', 'Noto Sans TC', 'sans-serif'; */
     font-size: 16px;
 }
 
@@ -31,7 +31,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3 {
@@ -112,4 +112,9 @@ div.section-link a:hover::before {
 
 div.section-link a:hover::after {
     transform: scale(1);
+}
+
+
+::-webkit-scrollbar {
+    display: none;
 }

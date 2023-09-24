@@ -80,7 +80,7 @@ div.detail-section {
 div.detail-section div.left-side div.title {
     color: var(--Dark-cyan);
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 42px;
     border-bottom: 1px solid var(--Dark-cyan);
 }
@@ -98,7 +98,7 @@ div.detail-section div.left-side div.content div.detail-info {
 }
 
 div.detail-section div.left-side div.content div.detail-info div.info-title {
-    font-weight: 500;
+    font-weight: 550;
 }
 
 div.detail-section div.left-side div.content div.detail-info div.info-title::after {
@@ -189,7 +189,7 @@ div.detail-section div.right-side ul.samllimg-list>li.imgItem.show img::before {
 
 div.related-section div.section-title {
     color: var(--Dark-orange);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 div.related-section div.card-list {
