@@ -1,0 +1,184 @@
+/* ========== header 區域 ==========  */
+header.header {
+    position: sticky;
+}
+
+/* ========== common 區域 ==========  */
+div.main {
+    background-color: var(--Light-grayish-orange);
+}
+
+div.cart-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* ========== cart-title 處理區域 ==========  */
+
+div.cart-title {
+    color: var(--Dark-orange);
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+/* ========== cart-list 處理區域 ==========  */
+
+div.cart-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+div.cart-list div.left-items {
+    display: flex;
+    flex-direction: column;
+    color: var(--Dark-cyan);
+    flex-grow: 1;
+}
+
+/* ========== cart-list left-items 處理區域 ==========  */
+div.left-items div.product-items div.subtitle,
+div.left-items div.course-items div.subtitle {
+    color: var(--Dark-cyan);
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+div.left-items div.product-items div.item,
+div.left-items div.course-items div.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 12px;
+    border-bottom: 1px solid var(--Grayish-orange);
+}
+
+div.left-items div.course-items {
+    margin-top: 20px;
+}
+
+div.left-items div.product-items div.item div.item-detail,
+div.left-items div.course-items div.item div.item-detail {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 12px 0;
+}
+
+div.left-items div.product-items div.item div.item-detail span.item-name,
+div.left-items div.course-items div.item div.item-detail span.item-name {
+    flex-grow: 1;
+}
+
+div.left-items div.product-items div.item div.item-detail div.num-count {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border: 1px solid var(--Dark-cyan);
+    border-radius: 100px;
+    line-height: 46px;
+}
+
+div.left-items div.course-items div.item div.item-detail div.num-count span {
+    padding: 10px 65px;
+    border: 1px solid var(--Dark-cyan);
+    border-radius: 100px;
+    line-height: 46px;
+}
+
+/* ==========  lightbox 處理區域 ==========  */
+div.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 25%, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+div.lightbox div.form-section {
+    width: 60%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 36px;
+    overflow: scroll;
+}
+
+div.lightbox div.form-section div.form-title {
+    position: relative;
+}
+
+div.lightbox div.form-section div.accordion-section {
+    margin: 40px;
+}
+
+div.lightbox div.form-section div.accordion-section button {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+/* ========== cart-list right-summary 處理區域 ==========  */
+
+div.cart-list div.right-summary {
+    flex-basis: 400px;
+    flex-shrink: 0;
+}
+
+div.right-summary h4.sumtitle {
+    color: var(--Dark-orange);
+    font-weight: 600;
+
+}
+
+div.right-summary div.subtitle,
+div.right-summary div.count,
+div.right-summary div.total {
+    color: var(--Dark-cyan);
+    font-size: 1.25rem;
+    line-height: 42px;
+    display: flex;
+    width: 80%;
+}
+
+div.right-summary div.subtitle,
+div.right-summary div.total {
+    margin-top: 40px;
+
+}
+
+div.right-summary div.subtitle {
+    border-bottom: 1px solid var(--Dark-cyan);
+}
+
+div.right-summary div.total {
+    border-top: 1px solid var(--Dark-cyan);
+}
+
+div.right-summary div.subtitle div.row-name,
+div.right-summary div.count div.row-name,
+div.right-summary div.total div.row-name {
+    flex-grow: 1;
+}
+
+div.right-summary button.check-out {
+    width: 80%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--Dark-orange);
+    border-radius: 100px;
+    margin-top: 44px;
+}

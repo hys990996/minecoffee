@@ -1,0 +1,33 @@
+div.breadcrumbs {
+    max-width: 1400px;
+    margin: 0 auto;
+    line-height: 42px;
+}
+
+div.breadcrumbs ul {
+    padding: 8px 0 12px 0;
+}
+
+div.breadcrumbs ul>li {
+    list-style: none;
+    display: inline-block;
+}
+
+div.breadcrumbs ul>li a {
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: var(--Dark-orange);
+}
+
+div.breadcrumbs ul>li::before {
+    content: ' / ';
+    color: var(--Dark-orange);
+}
+
+div.breadcrumbs ul>li:last-child a {
+    text-decoration: none;
+}
+
+div.breadcrumbs ul>li:first-child::before {
+    content: '';
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Coffee | Course-List</title>
+    <link rel="icon" href="./images/logo/logo_icon.ico">
+    <link rel="stylesheet" href="./css/common/reset.css">
+    <link rel="stylesheet" href="./css/common/all.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/tab.css">
+    <link rel="stylesheet" href="./css/cardList.css">
+    <script src="./js/jQuery/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-block">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img id="header-logo-img" src="./images/logo/logo_white.svg" alt="header-logo">
+                </a>
+            </div>
+            <div class="header-nav">
+                <ul class="nav-list">
+                    <li><a href="./about-us.html" class="nav-item" data-name="關於我們">About</a></li>
+                    <li><a href="" class="nav-item" data-name="體驗課程">Learn</a></li>
+                    <li><a href="./product-list.html" class="nav-item" data-name="精選商品">Product</a></li>
+                    <li><a href="./journal-list.html" class="nav-item" data-name="知識分享">Journal</a></li>
+                </ul>
+            </div>
+            <div class="header-button">
+                <a href="./cart.html"><img src="./images/common/cart.svg" alt="cart-logo"></a>
+                <a href="./signin.html"><img src="./images/common/signin.svg" alt="signin-logo"></a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="kv-banner">
+            <a href="">
+                <img src="./images/course-list/banner/course-4.jpg" alt="banner">
+                <h1>Learn with Us</h1>
+            </a>
+        </div>
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">Learn</a></li>
+            </ul>
+        </div>
+        <div class="tabSet">
+            <input type="radio" id="tab1" name="tabSet" checked>
+            <label for="tab1">Basic</label>
+            <input type="radio" id="tab2" name="tabSet">
+            <label for="tab2">Advanced</label>
+            <input type="radio" id="tab3" name="tabSet">
+            <label for="tab3">Licence</label>
+        </div>
+        <div class="tabContainer">
+            <div class="tab-Section show">
+                <div class="card-section">
+                    <div class="card-item">
+                        <a href="./course-detail-1.html">
+                            <div class="card-img" data-info-1="沖泡方式之中速度最快" data-info-2="但非常講究技術和經驗">
+                                <img src="./images/course-list/card-hover-1.png" alt="">
+                                <img src="./images/course-list/card-1.png" alt="productImage">
+                            </div>
+                        </a>
+                        <div class="card-info">
+                            <div class="title">手沖咖啡入門班</div>
+                            <div class="price">小班教學 | $450 (每人)</div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="./course-detail-1.html">
+                            <div class="card-img" data-info-1="拉花講求手眼心合一" data-info-2="專業導師教授心法 自然事半功倍">
+                                <img src="./images/course-list/card-hover-1.png" alt="">
+                                <img src="./images/course-list/card-3.png" alt="productImage">
+                            </div>
+                        </a>
+                        <div class="card-info">
+                            <div class="title">咖啡拉花入門班</div>
+                            <div class="price">小班教學 | $450 (每人)</div>
+                        </div>
+                    </div>
+                    <div class="card-item">
+                        <a href="./course-detail-1.html">
+                            <div class="card-img" data-info-1="虹吸壺沖泡味道各有千秋" data-info-2="歡迎一起分享咖啡的香醇世界">
+                                <img src="./images/course-list/card-hover-1.png" alt="">
+                                <img src="./images/course-list/card-4.png" alt="productImage">
+                            </div>
+                        </a>
+                        <div class="card-info">
+                            <div class="title">虹吸咖啡體驗班</div>
+                            <div class="price">小班教學 | $490 (每人)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-Section">
+                <div class="card-section">
+                    <div class="card-item">
+                        <a href="">
+                            <div class="card-img" data-info-1="拉花講求的是手眼心合一" data-info-2="投入與專注才能成功拉出一杯完美Latte Art">
+                                <img src="./images/course-list/card-hover-1.png" alt="">
+                                <img src="./images/course-list/card-3.png" alt="productImage">
+                            </div>
+                        </a>
+                        <div class="card-info">
+                            <div class="title">咖啡拉花進階班</div>
+                            <div class="price">一對一私人班 | $1100</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-Section">
+                <div class="card-section">
+
+                    <div class="card-item">
+                        <a href="./course-detail-1.html">
+                            <div class="card-img" data-info-1="拉花講求手眼心合一" data-info-2="專業導師教授心法 自然事半功倍">
+                                <img src="./images/course-list/card-hover-1.png" alt="">
+                                <img src="./images/course-list/card-3.png" alt="productImage">
+                            </div>
+                        </a>
+                        <div class="card-info">
+                            <div class="title">咖啡拉花入門班</div>
+                            <div class="price">小班教學 | $450 (每人)</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="./index.html">
+                    <img id="header-logo-img" src="./images/logo/logo_white.svg" alt="logo">
+                </a>
+                <div class="contact-info">
+                    <p class="address">104506台北市中山區南京東路三段219號5樓</p>
+                    <p class="tel"> 02-2712-0589</p>
+                </div>
+                <div class="scroll-top" id="scroll-top">
+                    <a href="">scroll <img src="./images/common/arrow-up.svg" alt="arrow-up icon"></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="copyright">©本網站為緯育TibaMe【第87期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+
+</html>

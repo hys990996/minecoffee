@@ -1,0 +1,341 @@
+div.main {
+    background-color: var(--Grayish-orange)
+}
+
+/*========== kv-banner 區域 ========== */
+
+div.main div.kv-banner img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+@media screen and (min-width:1200px) {
+    div.main div.kv-banner {
+        height: 840px;
+        overflow: hidden;
+    }
+}
+
+/*========== section-common 區域 ========== */
+
+div.main div.section-learn,
+div.main div.section-today,
+div.main div.section-journal {
+    max-width: 1400px;
+    margin: 0 auto;
+    /* height: 840px; */
+}
+
+div.section-learn h2,
+div.section-journal h2,
+div.section-locaton h2 {
+    color: #B3542C;
+    text-align: center;
+}
+
+/*========== section-learn 區域 ========== */
+
+
+div.section-learn {
+    padding: 40px 54px 54px 20px;
+}
+
+
+div.section-learn div.section-description {
+    color: var(--Dark-cyan);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 32px;
+}
+
+div.section-learn div.section-link {
+    padding-top: 18px;
+}
+
+
+div.section-learn div.course-block {
+    margin-top: 40px;
+    border: 1px dotted brown;
+    position: relative;
+    height: 500px;
+}
+
+div.section-learn div.course-block div.course-item {
+    width: 500px;
+}
+
+div.section-learn div.course-block div.course-item.-selected {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+div.section-learn div.course-block div.course-item a {
+    display: block;
+    position: relative;
+    font-size: 0;
+}
+
+
+div.section-learn div.course-block div.course-item div.course-info {
+    background-color: rgba(0, 0, 0, 0.30);
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: var(--Grayish-orange);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.section-learn div.course-block div.course-item.-selected div.course-info p.course-title {
+    font-size: 1.5rem;
+}
+
+div.section-learn div.course-block div.course-item.-selected div.course-info p.description {
+    font-size: 1rem;
+}
+
+
+/*========== section-today 區域 ========== */
+
+div.main div.section-today {
+    padding: 60px 60px 54px 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+div.main div.section-today div.left-info {
+    width: 50%;
+    position: absolute;
+    left: 60px;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px
+}
+
+div.main div.section-today div.left-info h2 {
+    color: var(--Dark-orange);
+}
+
+div.main div.section-today div.left-info div.product-info {
+    color: var(--Very-dark-orange);
+}
+
+div.main div.section-today div.left-info div.product-info div.product-name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+div.main div.section-today div.left-info div.product-info div.product-description {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 40px;
+    line-height: 20px;
+}
+
+div.section-today div.left-info div.section-link {
+    padding-top: 40px;
+}
+
+div.main div.section-today div.right-img {
+    margin-top: 80px;
+    width: 50%;
+    position: relative;
+    z-index: 100;
+}
+
+div.main div.section-today div.right-img img {
+    display: block;
+    width: 100%;
+}
+
+div.main div.section-today div.right-img::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background-color: var(--Dark-orange);
+    z-index: -1;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+div.main div.section-today div.right-img::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: var(--Dark-orange);
+    z-index: 200;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+}
+
+/*========== section-journal 區域 ========== */
+
+div.main div.section-journal {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+}
+
+div.main div.section-journal div.journal-block {
+    padding: 60px 120px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+div.main div.section-journal div.journal-block div.left-info {
+    background: var(--Dark-cyan);
+    width: 40%;
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    color: var(--Grayish-orange);
+    padding: 56px 36px 12px 36px;
+}
+
+div.main div.section-journal div.journal-block div.left-info div.journal-title {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+div.main div.section-journal div.journal-block div.left-info div.journal-description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 20px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+div.main div.section-journal div.journal-block div.left-info div.journal-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 42px;
+    text-transform: uppercase;
+    padding-top: 48px;
+    text-align: center;
+}
+
+div.main div.section-journal div.journal-block div.left-info div.journal-link a {
+    text-decoration: underline;
+    color: var(--Grayish-orange);
+}
+
+
+div.main div.section-journal div.journal-block div.right-img {
+    width: 60%;
+    overflow: hidden;
+}
+
+div.main div.section-journal div.journal-block div.right-img img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+div.main div.section-journal div.journal-block div.item-btn {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+div.main div.section-journal div.journal-block div.item-btn ul {
+    display: flex;
+}
+
+div.main div.section-journal div.journal-block div.item-btn ul>li {
+    padding-right: 12px;
+    text-decoration: underline;
+    color: var(--Dark-orange);
+}
+
+div.main div.section-journal div.journal-block div.item-btn ul>li:last-child {
+    padding-right: 0;
+}
+
+
+/*========== section-location 區域 ========== */
+
+div.main div.section-locaton {
+    padding: 20px 0 60px 0;
+}
+
+div.main div.section-locaton h2.section-title {
+    margin-bottom: 32px;
+}
+
+div.main div.location-block {
+    display: grid;
+    grid-template: 400px 250px / 700px 600px;
+    grid-template-areas: "location-img location-map" "location-img location-info";
+    gap: 0 0;
+    justify-content: center;
+}
+
+div.main div.section-locaton div.location-block div.location-img {
+    grid-area: location-img;
+}
+
+div.main div.section-locaton div.location-block div.location-img img {
+    width: 100%;
+}
+
+div.main div.section-locaton div.location-block div.location-map {
+    grid-area: location-map;
+    position: relative;
+    width: 100%;
+}
+
+div.main div.section-locaton div.location-block div.location-map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.main div.section-locaton div.location-block div.location-info {
+    grid-area: location-info;
+    background-color: var(--Dark-orange);
+    width: 100%;
+    color: white;
+}
+
+div.main div.section-locaton div.location-block div.location-info div.info-block {
+    padding: 36px 50px;
+}
+
+
+div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item {
+    display: flex;
+    padding-top: 16px;
+}
+
+div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item div.title {
+    flex-basis: 145px;
+    text-transform: capitalize;
+}

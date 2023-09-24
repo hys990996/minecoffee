@@ -1,0 +1,106 @@
+/* ========== header 區域 ==========  */
+header.header {
+    position: sticky;
+}
+
+/* ========== common 區域 ==========  */
+div.main {
+    background-color: var(--Light-grayish-orange);
+}
+
+div.member-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+div.member-profile,
+div.order-list {
+    width: 60%;
+    margin: 20px auto 80px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.member-data,
+div.order-data {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 42px;
+    text-transform: capitalize;
+}
+
+div.member-data div.title,
+div.order-data div.title {
+    color: var(--Dark-orange);
+    text-align: left;
+    border-right: 1px solid var(--Dark-orange);
+    flex-basis: 160px;
+    flex-shrink: 0;
+}
+
+div.member-data div.value,
+div.order-data div.value {
+    color: var(--Dark-cyan);
+}
+
+
+/* ==========section-title處理區域 ==========  */
+
+div.section-title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--Dark-orange);
+    padding: 20px 0;
+}
+
+
+/* ========== member-data 處理區域 ==========  */
+
+div.member-profile {
+    gap: 20px;
+}
+
+div.member-data {
+    gap: 52px;
+}
+
+
+/* ========== order-list 處理區域 ==========  */
+
+
+div.order-list div.order {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--Dark-orange);
+    padding: 32px 0 20px 0;
+}
+
+div.order-list div.order div.order-img {
+    width: 120px;
+    height: 120px;
+    background-image: url('../images/common/order.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.order-list div.order div.order-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+div.order-list div.order div.order-info div.order-data {
+    gap: 20px;
+}
+
+
+div.order-list div.order a {
+    text-decoration: none;
+    color: var(--Dark-orange);
+}

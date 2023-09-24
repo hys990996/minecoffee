@@ -1,0 +1,93 @@
+/* ========== header 區域 ==========  */
+header.header {
+    position: sticky;
+}
+
+/* ========== common 區域 ==========  */
+div.main {
+    background-color: var(--Light-grayish-orange);
+    min-height: calc(100vh - 100px - 136px);
+}
+
+div.sign-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* ==========section-title處理區域 ==========  */
+
+div.section-title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--Dark-orange);
+    padding: 40px 0;
+}
+
+
+/* ==========signin-form 處理區域 ==========  */
+
+div.sign-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+div.sign-form input,
+div.sign-form p,
+div.sign-form button,
+div.sign-form div.fullname {
+    width: 20%;
+    margin: 0 auto;
+}
+
+div.sign-form input,
+div.sign-form button {
+    border-radius: 100px;
+    font-size: 1rem;
+    line-height: 42px;
+}
+
+div.sign-form input[type="text"] {
+    border-color: transparent;
+    padding: 4px 20px;
+}
+
+div.sign-form input[type="text"]:focus {
+    border-color: #B3542C;
+    /* border-color: var(--Dark-orange); */
+}
+
+div.sign-form div.fullname {
+    display: flex;
+    gap: 8px;
+}
+
+div.sign-form div.fullname input {
+    width: 100%;
+}
+
+div.sign-form button {
+    color: white;
+    background-color: var(--Dark-orange);
+    margin-top: 40px;
+}
+
+div.sign-form a {
+    text-decoration: underline;
+    color: var(--Dark-cyan);
+    font-size: 0.75rem;
+}
+
+div.sign-form p {
+    padding-top: -16px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+}
+
+div.sign-form p.register,
+div.sign-form p.signin {
+    margin-top: 40px;
+}

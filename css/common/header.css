@@ -1,0 +1,166 @@
+header.header {
+    background-color: transparent;
+    /* background-color: lightskyblue; */
+    min-width: 1400px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+
+header.header div.header-block {
+    max-width: 100%;
+    width: 1400px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* 更換header底色*/
+header.header.bg-Grayishorange {
+    background-color: var(--Grayish-orange);
+}
+
+/* header加上底線*/
+header.header.bg-Grayishorange._underline {
+    border-bottom: 1px solid #a47152;
+    /* opacity: 0.9; */
+}
+
+
+/*========== logo區域 ========== */
+header.header div.header-block div.header-logo {
+    font-size: 0;
+}
+
+header.header div.header-block div.header-logo img {
+    max-height: 80px;
+}
+
+/*========== 選單區域 ========== */
+
+header.header div.header-block div.header-nav {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.header div.header-block div.header-nav ul.nav-list {
+    text-align: center;
+    padding: 0;
+}
+
+header.header div.header-block div.header-nav ul.nav-list>li {
+    list-style: none;
+    display: inline-block;
+}
+
+header.header div.header-block div.header-nav ul.nav-list>li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    line-height: 80px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+/* 向下轉軸時更換選單顏色 */
+header.header div.header-block div.header-nav ul.nav-list>li a.scroll {
+    color: var(--Dark-orange);
+    font-weight: 500;
+}
+
+/* 製作hover效果 */
+header.header div.header-block div.header-nav ul.nav-list>li a::before {
+    content: attr(data-name);
+    font-size: 1.2rem;
+    color: var(--Dark-orange);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header.header div.header-block div.header-nav ul.nav-list>li a:hover {
+    color: transparent;
+    transform: translateY(5px);
+    transition: transform 300ms ease;
+}
+
+header.header div.header-block div.header-nav ul.nav-list>li a:hover::before {
+    opacity: 1;
+}
+
+header.header div.header-block div.header-nav ul.nav-list>li a:hover {
+    border-bottom: 2px solid var(--Dark-orange);
+}
+
+
+/*===== heade button 區域 ===== */
+
+div.header-block div.header-button {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+div.header-block div.header-button a {
+    display: block;
+    position: relative;
+}
+
+div.header-block div.header-button a:first-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../images/common/cart-orange.svg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: transform 300ms linear;
+}
+
+div.header-block div.header-button a:first-child:hover img {
+    opacity: 0;
+}
+
+div.header-block div.header-button a:first-child:hover:before {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+div.header-block div.header-button a:last-child:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../../images/common/signin-orange.svg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: transform 300ms linear;
+}
+
+div.header-block div.header-button a:last-child:hover img {
+    opacity: 0;
+}
+
+div.header-block div.header-button a:last-child:hover:before {
+    transform: translateY(0);
+    opacity: 1;
+}

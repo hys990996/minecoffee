@@ -1,0 +1,86 @@
+/* ========== tabSet 區域 ========== */
+
+div.main div.tabSet {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 48px;
+
+    /* 固定在header下方 */
+    /* position: sticky;
+    top: 100px;
+    z-index: 100; */
+}
+
+div.main div.tabSet input {
+    display: none;
+}
+
+div.main div.tabSet>label {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 42px;
+    color: white;
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+div.main div.tabSet>label.-Grayish-orange {
+    color: var(--Grayish-orange);
+    font-weight: 600;
+}
+
+div.main div.tabSet>label::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    transition: width 300ms ease;
+}
+
+div.main div.tabSet>label.-Grayish-orange::after {
+    background-color: var(--Grayish-orange);
+}
+
+div.main div.tabSet>input:checked+label {
+    color: var(--Dark-orange);
+}
+
+div.main div.tabSet>input:checked+label::after {
+    background-color: var(--Dark-orange);
+    width: 100%;
+}
+
+div.main div.tabSet>label:hover::after {
+    width: 100%;
+}
+
+
+
+/* ========== tabContainer 區域 ========== */
+
+/* ========== tab-Section 區域 ========== */
+
+/* 隱藏 */
+div.tabContainer div.tab-Section,
+div.tabContainer div.tab-Section,
+div.tabContainer div.tab-Section {
+    max-width: 1400px;
+    width: calc((100% - 120px));
+    margin: 0 auto;
+    padding: 40px 0 120px 0;
+    display: none;
+}
+
+/* 顯示 */
+div.tabContainer div.tab-Section.show,
+div.tabContainer div.tab-Section.show,
+div.tabContainer div.tab-Section.show {
+    display: block;
+}

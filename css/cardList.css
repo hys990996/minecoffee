@@ -1,0 +1,235 @@
+/* ========== common 區域 ==========  */
+div.main {
+    background-color: var(--Grayish-orange);
+}
+
+/* ========== kv-banner 區域 ========== */
+
+div.main div.kv-banner {
+    height: 500px;
+    overflow: hidden;
+}
+
+div.main div.kv-banner img {
+    width: 100%;
+    vertical-align: bottom;
+    position: relative;
+}
+
+div.main div.kv-banner h1 {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    color: white;
+}
+
+div.main div.kv-banner h4 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+/* ========== card-section 區域 ========== */
+div.tabContainer div.card-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* 預設三欄 */
+div.tabContainer div.card-item {
+    width: calc((100% - 32px)/3);
+    margin-right: 16px;
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.tabContainer div.card-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+div.tabContainer div.card-item a {
+    text-decoration: none;
+    font-size: 0;
+}
+
+/* 更換成兩欄 */
+div.tabContainer div.card-item.two-cols {
+    width: calc((100% - 40px)/2);
+    position: relative;
+    margin-right: 40px;
+}
+
+div.tabContainer div.card-item.two-cols:nth-child(2n) {
+    margin-right: 0;
+}
+
+
+/* ===== card-section img處理 ===== */
+div.tabContainer div.card-item div.card-img {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.tabContainer div.card-item div.card-img img {
+    width: 101%;
+    position: absolute;
+    vertical-align: bottom;
+    transition: opacity 500ms ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* hover後隱藏第一張圖換第二張圖 */
+div.tabContainer div.card-item:hover div.card-img img:last-child {
+    opacity: 0;
+}
+
+/* hover後顯示說明文字 */
+div.tabContainer div.card-item div.card-img::before {
+    content: attr(data-info-1)'\A ' attr(data-info-2);
+    white-space: pre;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--Grayish-orange);
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 32px;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+div.tabContainer div.card-item:hover div.card-img::before {
+    opacity: 1;
+}
+
+
+/* ===== card-section 資訊內容處理 ===== */
+div.tabContainer div.card-item div.card-info {
+    color: var(--Dark-cyan);
+}
+
+div.tabContainer div.card-item div.card-info div.title {
+    padding-top: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 42px;
+    border-bottom: 1px solid var(--Dark-cyan);
+    position: relative;
+}
+
+/* hover顯示加入購物車 */
+div.tabContainer div.card-item:hover div.card-info div.title {
+    background-color: var(--Light-grayish-orange);
+    border-bottom: 1px solid var(--Dark-orange);
+}
+
+div.tabContainer div.card-item div.card-info div.title::before {
+    content: 'Add to Cart';
+    color: var(--Dark-orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+div.tabContainer div.card-item:hover div.card-info div.title::before {
+    opacity: 1;
+}
+
+div.tabContainer div.card-item:hover div.card-info div.title {
+    color: transparent;
+}
+
+div.tabContainer div.card-item div.card-info div.price {
+    text-align: center;
+    line-height: 30px;
+    font-size: 1rem;
+}
+
+
+/* ========== card-section 區域  for journal========== */
+
+
+div.tabContainer div.card-item.two-cols img {
+    width: 100%;
+}
+
+div.tabContainer div.card-item.two-cols div.front div.journal-date {
+    font-weight: 400;
+    line-height: 30px;
+}
+
+div.tabContainer div.card-item.two-cols div.front div.journal-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+div.tabContainer div.card-item.two-cols div.front {
+    transform: rotateY(0deg);
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+    /* transition-timing-function: linear; */
+    transition-duration: 800ms;
+    transition-property: transform, opacity;
+}
+
+div.tabContainer div.card-item.two-cols div.back {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    padding: 0 1rem;
+    text-align: center;
+    border-top: 2px solid var(--Dark-orange);
+    border-bottom: 2px solid var(--Dark-orange);
+    transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+    transition-duration: 800ms;
+    transform: rotateY(-180deg);
+    opacity: 0;
+}
+
+div.tabContainer div.card-item.two-cols div.back div.journal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 32px;
+    padding-top: 25%;
+}
+
+div.tabContainer div.card-item.two-cols div.journal-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-top: 16px;
+}
+
+div.tabContainer div.card-item.two-cols div.journal-bref {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 16px;
+    line-height: 20px;
+}
+
+div.tabContainer div.card-item.two-cols:hover div.front {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+div.tabContainer div.card-item.two-cols:hover div.back {
+    transform: rotateY(0deg);
+    opacity: 1;
+}

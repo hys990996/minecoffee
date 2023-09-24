@@ -1,0 +1,182 @@
+/*========== kv-banner 區域 ========== */
+
+div.main div.kv-banner img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+@media screen and (min-width:1200px) {
+    div.main div.kv-banner {
+        height: 840px;
+        overflow: hidden;
+    }
+}
+
+/*========== section-slogan 區域 ========== */
+div.main div.section-slogan {
+    background: #59818A;
+}
+
+div.main div.section-slogan div.slogan-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 56px 10px;
+}
+
+/*========== section-highQ 區域 ========== */
+div.main div.section-highQ {
+    height: 850px;
+    background: url('../images/about-us/about-us-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+div.main div.section-highQ::before {
+    content: '';
+    display: block;
+    height: 850px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: radial-gradient(139.38% 109.01% at 48.06% 39.18%, rgba(255, 255, 255, 0.00) 0%, #D4DDD9 63.51%);
+}
+
+div.main div.section-highQ div.content {
+    padding-top: 80px;
+    padding-left: 120px;
+    position: relative;
+    z-index: 2;
+}
+
+div.main div.section-highQ div.content div.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #59818A;
+}
+
+div.main div.section-highQ div.content div.detail {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #59818A;
+    line-height: 42px;
+    width: 660px;
+}
+
+/*========== section-ourCoffee 區域 ========== */
+div.main div.section-ourCoffee {
+    height: 850px;
+    background: url('../images/about-us/about-us-2.jpg');
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.main div.section-ourCoffee::before {
+    content: '';
+    display: block;
+    height: 850px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: radial-gradient(139.38% 109.01% at 48.06% 39.18%, rgba(255, 255, 255, 0.00) 0%, #452011 63.51%);
+}
+
+div.main div.section-ourCoffee div.content {
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+}
+
+div.main div.section-ourCoffee div.content div.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #452011;
+}
+
+div.main div.section-ourCoffee div.content div.detail {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #452011;
+    line-height: 42px;
+    width: 660px;
+}
+
+/*========== section-location 區域 ========== */
+
+div.main div.section-locaton {
+    padding: 20px 0 60px 0;
+    background-color: #D7C3AB;
+}
+
+div.section-locaton h2 {
+    color: #B3542C;
+    text-align: center;
+}
+
+div.main div.section-locaton h2.section-title {
+    margin-bottom: 32px;
+}
+
+div.main div.location-block {
+    display: grid;
+    grid-template: 400px 250px / 700px 600px;
+    grid-template-areas: "location-img location-map" "location-img location-info";
+    gap: 0 0;
+    /* justify-items: center; */
+    justify-content: center;
+}
+
+div.main div.section-locaton div.location-block div.location-img {
+    grid-area: location-img;
+}
+
+div.main div.section-locaton div.location-block div.location-img img {
+    width: 100%;
+}
+
+div.main div.section-locaton div.location-block div.location-map {
+    grid-area: location-map;
+    position: relative;
+    width: 100%;
+}
+
+div.main div.section-locaton div.location-block div.location-map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.main div.section-locaton div.location-block div.location-info {
+    grid-area: location-info;
+    background-color: #B3542C;
+    width: 100%;
+    color: white;
+}
+
+div.main div.section-locaton div.location-block div.location-info div.info-block {
+    padding: 36px 50px;
+}
+
+
+div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item {
+    display: flex;
+    padding-top: 16px;
+}
+
+div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item div.title {
+    flex-basis: 145px;
+    text-transform: capitalize;
+}

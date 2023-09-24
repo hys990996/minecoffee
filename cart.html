@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Coffee | Prodct-Deatil</title>
+    <link rel="icon" href="./images/logo/logo_icon.ico">
+    <link rel="stylesheet" href="./css/common/reset.css">
+    <link rel="stylesheet" href="./css/common/all.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/detail-page.css">
+    <link rel="stylesheet" href="./css/registerform.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="./js/jQuery/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="header bg-Grayishorange" id="header">
+        <div class="header-block">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img id="header-logo-img" src="./images/logo/logo_color.svg" alt="header-logo">
+                </a>
+            </div>
+            <div class="header-nav">
+                <ul class="nav-list">
+                    <li><a href="./about-us.html" class="nav-item" data-name="關於我們">About</a></li>
+                    <li><a href="./course-list.html" class="nav-item" data-name="體驗課程">Learn</a></li>
+                    <li><a href="./product-list.html" class="nav-item" data-name="精選商品">Product</a></li>
+                    <li><a href="./journal-list.html" class="nav-item" data-name="知識分享">Journal</a></li>
+                </ul>
+            </div>
+            <div class="header-button">
+                <a href="./cart.html"><img src="./images/common/cart.svg" alt="cart-logo"></a>
+                <a href="./signin.html"><img src="./images/common/signin.svg" alt="signin-logo"></a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="">shopping cart</a></li>
+            </ul>
+        </div>
+        <div class="cart-section">
+            <div class="cart-title">
+                <h3>cart </h3>
+            </div>
+            <div class="cart-list">
+                <div class="left-items">
+                    <div class="product-items">
+                        <div class="subtitle">Products</div>
+                        <div class="item">
+                            <button><img src="./images/common/close.svg" alt="close icon"></button>
+                            <div class="item-detail">
+                                <img src="./images/common/product.svg" alt="product item's image">
+                                <span class="item-name">伊索比亞 花綻豆孃 歌姬藝伎 日曬 G1</span>
+                                <span class="item-price">NT$450</span>
+                                <div class="num-count">
+                                    <button class="minus"><img src="./images/common/minus-cyan.svg" alt=""></button>
+                                    <span id="numCount">1</span>
+                                    <button class="plus"><img src="./images/common/plus-cyan.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <button><img src="./images/common/close.svg" alt="close icon"></button>
+                            <div class="item-detail">
+                                <img src="./images/common/product.svg" alt="product item's image">
+                                <span class="item-name">伊索比亞 水洗耶加雪菲 荔枝處理場 G1</span>
+                                <span class="item-price">NT$500</span>
+                                <div class="num-count">
+                                    <button class="minus"><img src="./images/common/minus-cyan.svg" alt=""></button>
+                                    <span id="numCount">1</span>
+                                    <button class="plus"><img src="./images/common/plus-cyan.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-items">
+                        <div class="subtitle">course</div>
+                        <div class="item">
+                            <button><img src="./images/common/close.svg" alt="close icon"></button>
+                            <div class="item-detail">
+                                <img src="./images/common/product.svg" alt="product item's image">
+                                <span class="item-name">
+                                    手沖咖啡入門班
+                                    <button id="editBtn"><img src="./images/common/edit.svg" alt="edit icon"></button>
+                                </span>
+                                <span class="item-price">NT$450</span>
+                                <div class="num-count">
+                                    <span id="numCount">1</span>
+                                </div>
+                            </div>
+                            <div class="lightbox">
+                                <div class="form-section">
+                                    <div class="form-title -no-padding">
+                                        <h4>報名資料</h4>
+                                    </div>
+                                    <div class="accordion-section" id="accordion">
+                                        <div class="accordion-item -Light-grayish-orange">
+                                            <input type="checkbox" id="cd1">
+                                            <label for="cd1" data-name="王小明">
+                                                <img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
+                                                <img src="./images/common/arrow-down.svg" alt="icon" class="arrow-down">
+                                            </label>
+                                            <div class="form-content">
+                                                <div class="leftside">
+                                                    <input type="text" placeholder="name">
+                                                    <input type="text" placeholder="phone">
+                                                    <input type="text" placeholder="e-mail">
+                                                </div>
+                                                <div class="rightside">
+                                                    <div class="title">What’s your favor</div>
+                                                    <input name="roast-level" type="range" id="roast-level" min="0"
+                                                        max="100" value="0" step="50">
+                                                    <ul class="option">
+                                                        <li>淺焙</li>
+                                                        <li>中焙</li>
+                                                        <li>深焙</li>
+                                                    </ul>
+                                                    <input name="roast-level" type="range" id="roast-level" min="0"
+                                                        max="100" value="50" step="50">
+                                                    <ul class="option">
+                                                        <li>酸</li>
+                                                        <li>適中</li>
+                                                        <li>苦</li>
+                                                    </ul>
+                                                    <input name="roast-level" type="range" id="roast-level" min="0"
+                                                        max="100" value="25" step="25">
+                                                    <ul class="option">
+                                                        <li>花香</li>
+                                                        <li>果香</li>
+                                                        <li>甜味</li>
+                                                        <li>堅果</li>
+                                                        <li>其他</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item -Light-grayish-orange">
+                                            <input type="checkbox" id="cd2">
+                                            <label for="cd2" data-name="林小美">
+                                                <img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
+                                                <img src="./images/common/arrow-down.svg" alt="icon" class="arrow-down">
+                                            </label>
+                                            <div class="form-content">
+                                                <div class="leftside">
+                                                    <input type="text" placeholder="name">
+                                                    <input type="text" placeholder="phone">
+                                                    <input type="text" placeholder="e-mail">
+                                                </div>
+                                                <div class="rightside">
+                                                    <div class="title">What’s your favor</div>
+                                                    <input name="roast-level" type="range" id="roast-level" min="0"
+                                                        max="100" value="0" step="50">
+                                                    <ul class="option">
+                                                        <li>淺焙</li>
+                                                        <li>中焙</li>
+                                                        <li>深焙</li>
+                                                    </ul>
+                                                    <input name="roast-level" type="range" id="roast-level" min="0"
+                                                        max="100" value="50" step="50">
+                                                    <ul class="option">
+                                                        <li>酸</li>
+                                                        <li>適中</li>
+                                                        <li>苦</li>
+                                                    </ul>
+                                                    <input name="roast-level" type="range" id="roast-level" min="0"
+                                                        max="100" value="25" step="25">
+                                                    <ul class="option">
+                                                        <li>花香</li>
+                                                        <li>果香</li>
+                                                        <li>甜味</li>
+                                                        <li>堅果</li>
+                                                        <li>其他</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_close"><img
+                                                src="./images/common/close-outline.svg" alt=""></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-summary">
+                    <h4 class="sumtitle">Order summary</h4>
+                    <div class="subtitle">
+                        <div class="row-name">商品總數</div>
+                        <div class="row-value">3</div>
+                    </div>
+                    <div class="count">
+                        <div class="row-name">小計</div>
+                        <div class="row-value">$1,350</div>
+                    </div>
+                    <div class="count">
+                        <div class="row-name">運費</div>
+                        <div class="row-value">$160</div>
+                    </div>
+                    <div class="count">
+                        <div class="row-name">折扣</div>
+                        <div class="row-value">$0</div>
+                    </div>
+                    <div class="subtitle">
+                        <div class="row-name">課程總數</div>
+                        <div class="row-value">3</div>
+                    </div>
+                    <div class="count">
+                        <div class="row-name">小計</div>
+                        <div class="row-value">$1,350</div>
+                    </div>
+                    <div class="count">
+                        <div class="row-name">折扣</div>
+                        <div class="row-value">$0</div>
+                    </div>
+                    <div class="total">
+                        <div class="row-name">總計</div>
+                        <div class="row-value">$1,550</div>
+                    </div>
+                    <button class="check-out">check out</button>
+                </div>
+            </div>
+        </div>
+        <div class="related-section">
+            <div class="section-title">
+                <h4>You may also like</h4>
+            </div>
+            <div class="card-list">
+                <div class="card-item">
+                    <a href="">
+                        <div class="card-img"><img src="./images/product-detail/related-product/product01.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="title">伊索比亞 古吉紅蜜 G1 烏拉嘎鎮</div>
+                            <div class="price">淺焙｜果香｜$450｜250G</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-item">
+                    <a href="">
+                        <div class="card-img">
+                            <img src="./images/product-detail/related-product/product01.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="title">波特酒王 古吉日曬 二氧化碳浸漬</div>
+                            <div class="price">淺焙｜果香｜$450｜250G</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-item">
+                    <a href="">
+                        <div class="card-img">
+                            <img src="./images/product-detail/related-product/product01.jpg" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="title">波特酒王 古吉日曬 二氧化碳浸漬</div>
+                            <div class="price">淺焙｜果香｜$450｜250G</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="./index.html">
+                    <img id="header-logo-img" src="./images/logo/logo_white.svg" alt="logo">
+                </a>
+                <div class="contact-info">
+                    <p class="address">104506台北市中山區南京東路三段219號5樓</p>
+                    <p class="tel"> 02-2712-0589</p>
+                </div>
+                <div class="scroll-top" id="scroll-top">
+                    <a href="">scroll <img src="./images/common/arrow-up.svg" alt="arrow-up icon"></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="copyright">©本網站為緯育TibaMe【第87期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/footer.js"></script>
+    <script src="./js/product-detail.js"></script>
+    <script src="./js/lightbox.js"></script>
+</body>
+
+</html>

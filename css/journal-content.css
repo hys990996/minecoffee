@@ -1,0 +1,103 @@
+/* ========== header 區域 ==========  */
+header.header {
+    position: sticky;
+}
+
+/* ========== common 區域 ==========  */
+div.main {
+    background-color: var(--Light-grayish-orange);
+}
+
+div.detail-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* ========== detail-title處理區域 ==========  */
+
+div.journal-title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--Dark-orange);
+    padding: 20px 0;
+    border-bottom: 1px solid #cecece;
+}
+
+div.journal-title div.journal-date {
+    padding-top: 8px;
+}
+
+
+/* ========== paragraph 處理區域 ==========  */
+
+div.first-paragraph-section,
+div.other-paragraph-section,
+div.vedio-section {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--Dark-cyan);
+    padding-top: 40px;
+}
+
+div.first-paragraph-section {
+    display: flex;
+    align-items: center;
+    gap: 44px
+}
+
+div.first-paragraph-section div.subtitle,
+div.other-paragraph-section div.subtitle {
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+
+div.first-paragraph-section div.content,
+div.other-paragraph-section div.content {
+    line-height: 28px;
+    font-weight: 400;
+}
+
+div.vedio-section video {
+    width: 100%;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 30% 90%, 16% 100%, 10% 90%, 0 90%); */
+}
+
+/* div.section-link {
+    text-align: center;
+    padding: 40px 0;
+}
+
+div.section-link a {
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--Dark-orange);
+    width: 150px;
+    position: relative;
+}
+
+div.section-link a::before,
+div.section-link a::after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--Dark-orange);
+    transition: all 0.3s ease;
+    transform: scale(0.85);
+}
+
+div.section-link a:hover::before {
+    top: 0;
+    transform: scale(1);
+}
+
+div.section-link a:hover::after {
+    transform: scale(1);
+} */

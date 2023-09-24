@@ -1,0 +1,276 @@
+/* ========== header 區域 ==========  */
+header.header {
+    position: sticky;
+}
+
+/* ========== common 區域 ==========  */
+div.main {
+    background-color: var(--Light-grayish-orange);
+}
+
+div.detail-section,
+div.form-section,
+div.related-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* ========== btn.next-step 處理區域 ==========  */
+
+button.next-step {
+    color: var(--Dark-orange);
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 42px;
+    width: 200px;
+    border-bottom: 1px solid var(--Dark-orange);
+    letter-spacing: 2px;
+    color: var(--Dark-orange);
+    text-transform: uppercase;
+    position: relative;
+}
+
+button.next-step::before,
+button.next-step::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: width .5s;
+    z-index: -1;
+}
+
+button.next-step::before {
+    height: 1px;
+    background-color: var(--Dark-orange);
+}
+
+button.next-step::after {
+    height: 100%;
+    background-color: var(--Dark-orange);
+    transition-delay: 0.15s;
+}
+
+button.next-step:hover {
+    cursor: pointer;
+    color: white;
+    z-index: 1;
+}
+
+button.next-step:hover::before {
+    width: 100%;
+}
+
+button.next-step:hover::after {
+    width: 100%;
+}
+
+
+/* ========== detail-section 區域 ==========  */
+
+div.detail-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ========== detail-section left區域 ==========  */
+div.detail-section div.left-side div.title {
+    color: var(--Dark-cyan);
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 42px;
+    border-bottom: 1px solid var(--Dark-cyan);
+}
+
+div.detail-section div.left-side div.content {
+    color: var(--Dark-cyan);
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 16px;
+}
+
+div.detail-section div.left-side div.content div.detail-info {
+    display: flex;
+    padding-top: 8px;
+}
+
+div.detail-section div.left-side div.content div.detail-info div.info-title {
+    font-weight: 500;
+}
+
+div.detail-section div.left-side div.content div.detail-info div.info-title::after {
+    content: '|';
+    padding-left: 8px;
+}
+
+div.detail-section div.left-side div.content div.detail-info div.info-text {
+    padding-left: 8px;
+}
+
+
+div.detail-section div.left-side div.btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 120px;
+}
+
+div.detail-section div.left-side div.btn-section div.num-count {
+    color: var(--Dark-orange);
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 42px;
+    width: 200px;
+}
+
+div.detail-section div.left-side div.btn-section div.num-count {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--Dark-orange);
+    border-radius: 100px;
+    padding: 5px 0;
+}
+
+div.detail-section div.left-side div.btn-section div.num-count img {
+    position: relative;
+    vertical-align: middle;
+}
+
+/* ========== detail-section right區域 ==========  */
+
+div.detail-section div.right-side {
+    flex-basis: 660px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+div.detail-section div.right-side div.img-list {
+    height: 780px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div.detail-section div.right-side div.img-list img {
+    width: 100%;
+}
+
+div.detail-section div.right-side ul.samllimg-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+div.detail-section div.right-side ul.samllimg-list>li img {
+    width: 60px;
+}
+
+div.detail-section div.right-side ul.samllimg-list>li.imgItem.show img::before {
+    content: "";
+    width: 60px;
+    height: 100%;
+    background: var(--Dark-orange);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+
+/* ========== related-section 區域 ==========  */
+
+div.related-section div.section-title {
+    color: var(--Dark-orange);
+    font-weight: 500;
+}
+
+div.related-section div.card-list {
+    display: flex;
+    justify-content: center;
+    padding: 60px 40px;
+}
+
+div.related-section div.card-list div.card-item {
+    width: calc((100% - 48px)/3);
+    margin-right: 24px;
+}
+
+div.related-section div.card-list div.card-item div.card-img {
+    width: 420px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.related-section div.card-list div.card-item div.card-img img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 500ms;
+}
+
+div.related-section div.card-list div.card-item a {
+    text-decoration: none;
+    color: var(--Dark-cyan);
+}
+
+div.related-section div.card-list div.card-item div.card-info {
+    text-align: center;
+    padding-top: 16px;
+}
+
+div.related-section div.card-list div.card-item div.card-info div.title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 42px;
+    border-bottom: 1px solid var(--Dark-cyan);
+}
+
+div.related-section div.card-list div.card-item div.card-info div.price {
+    line-height: 32px;
+}
+
+div.related-section div.section-link {
+    padding: 60px 0;
+}
+
+/* ========== related-section 區域 hover效果 ==========  */
+
+div.related-section div.card-list div.card-item:hover a img {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+div.related-section div.card-list div.card-item:hover div.card-img::before {
+    content: 'read more';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+div.related-section div.card-list div.card-item:hover div.card-img::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+}
+
+div.related-section div.card-list div.card-item:hover div.card-info {
+    color: var(--Dark-orange);
+}

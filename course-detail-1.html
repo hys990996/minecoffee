@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Coffee | Course-Deatil</title>
+    <link rel="icon" href="./images/logo/logo_icon.ico">
+    <link rel="stylesheet" href="./css/common/reset.css">
+    <link rel="stylesheet" href="./css/common/all.css">
+    <link rel="stylesheet" href="./css/common/header.css">
+    <link rel="stylesheet" href="./css/common/footer.css">
+    <link rel="stylesheet" href="./css/common/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/detail-page.css">
+    <link rel="stylesheet" href="./css/registerform.css">
+</head>
+
+<body>
+    <header class="header bg-Grayishorange" id="header">
+        <div class="header-block">
+            <div class="header-logo">
+                <a href="./index.html">
+                    <img id="header-logo-img" src="./images/logo/logo_color.svg" alt="header-logo">
+                </a>
+            </div>
+            <div class="header-nav">
+                <ul class="nav-list">
+                    <li><a href="./about-us.html" class="nav-item" data-name="關於我們">About</a></li>
+                    <li><a href="./course-list.html" class="nav-item" data-name="體驗課程">Learn</a></li>
+                    <li><a href="./product-list.html" class="nav-item" data-name="精選商品">Product</a></li>
+                    <li><a href="./journal-list.html" class="nav-item" data-name="知識分享">Journal</a></li>
+                </ul>
+            </div>
+            <div class="header-button">
+                <a href="./cart.html"><img src="./images/common/cart.svg" alt="cart-logo"></a>
+                <a href="./signin.html"><img src="./images/common/signin.svg" alt="signin-logo"></a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./course-list.html">learn</a></li>
+                <li><a href="">手沖咖啡入門班</a></li>
+            </ul>
+        </div>
+        <div class="detail-section">
+            <div class="left-side">
+                <div class="title">
+                    <h3>手沖咖啡入門班</h3>
+                </div>
+                <div class="content">
+                    手沖咖啡在沖泡方式之中速度最快，不過似易實難，因為簡單如水溫甚至磨研度都會影響咖啡的風味，非常講究技術和經驗。如果你有興趣在這方面探索，歡迎一起分享咖啡的香醇世界。<br>
+                    * 課堂上會提供多款來自不同地區的精品咖啡豆<br>
+                    * 所有材料及工具由Tasse提供，亦歡迎自備想分享交流的手沖咖啡器具<br>
+                    <br>
+                    <div class="detail-info">
+                        <div class="info-title">時間</div>
+                        <div class="info-text">2024/01/01 10:00-12:00</div>
+                    </div>
+                    <div class="detail-info">
+                        <div class="info-title">地點</div>
+                        <div class="info-text">台北市金山南路二段112號</div>
+                    </div>
+                    <div class="detail-info">
+                        <div class="info-title">課程人數</div>
+                        <div class="info-text">最多8人</div>
+                    </div>
+                    <div class="detail-info">
+                        <div class="info-title">講師</div>
+                        <div class="info-text">王大明</div>
+                    </div>
+                    <div class="detail-info">
+                        <div class="info-title">授課金額</div>
+                        <div class="info-text">$450 (每人)</div>
+                    </div>
+                </div>
+                <div class="btn-section">
+                    <div class="num-count">
+                        <button class="minus"><img src="./images/common/minus.svg" alt=""></button>
+                        <span id="numCount">1</span>
+                        <button class="plus"><img src="./images/common/plus.svg" alt=""></button>
+                    </div>
+                    <button class="next-step _coverHover" id="nextBtn">next</button>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="img-list">
+                    <img src="./images/course-detail/course-1/image01.png" alt="">
+                    <img src="./images/course-detail/course-1/image02.png" alt="">
+                </div>
+                <ul class="samllimg-list">
+                    <li class="imgItem show"><img src="./images/course-detail/course-1/image01.png" alt=""></li>
+                    <li class="imagItem"><img src="./images/course-detail/course-1/image02.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-title">
+                <h4>報名資料</h4>
+            </div>
+            <div class="accordion-section" id="accordion">
+                <div class="accordion-item">
+                    <input type="checkbox" id="cd1">
+                    <label for="cd1" data-name="王小明">
+                        <img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
+                        <img src="./images/common/arrow-down.svg" alt="icon" class="arrow-down">
+                    </label>
+                    <div class="form-content">
+                        <div class="leftside">
+                            <input type="text" placeholder="name">
+                            <input type="text" placeholder="phone">
+                            <input type="text" placeholder="e-mail">
+                        </div>
+                        <div class="rightside">
+                            <div class="title">What’s your favor</div>
+                            <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="0"
+                                step="50">
+                            <ul class="option">
+                                <li>淺焙</li>
+                                <li>中焙</li>
+                                <li>深焙</li>
+                            </ul>
+                            <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="50"
+                                step="50">
+                            <ul class="option">
+                                <li>酸</li>
+                                <li>適中</li>
+                                <li>苦</li>
+                            </ul>
+                            <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="25"
+                                step="25">
+                            <ul class="option">
+                                <li>花香</li>
+                                <li>果香</li>
+                                <li>甜味</li>
+                                <li>堅果</li>
+                                <li>其他</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="accordion-item">
+                    <input type="checkbox" id="cd2">
+                    <label for="cd2" data-name="林小美">
+                        <img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
+                        <img src="./images/common/arrow-down.svg" alt="icon" class="arrow-down">
+                    </label>
+                    <div class="form-content">
+                        <div class="leftside">
+                            <input type="text" placeholder="name">
+                            <input type="text" placeholder="phone">
+                            <input type="text" placeholder="e-mail">
+                        </div>
+                        <div class="rightside">
+                            <div class="title">What’s your favor</div>
+                            <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="0"
+                                step="50">
+                            <ul class="option">
+                                <li>淺焙</li>
+                                <li>中焙</li>
+                                <li>深焙</li>
+                            </ul>
+                            <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="50"
+                                step="50">
+                            <ul class="option">
+                                <li>酸</li>
+                                <li>適中</li>
+                                <li>苦</li>
+                            </ul>
+                            <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="25"
+                                step="25">
+                            <ul class="option">
+                                <li>花香</li>
+                                <li>果香</li>
+                                <li>甜味</li>
+                                <li>堅果</li>
+                                <li>其他</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="form-button">
+                <button class="next-step">add to cart</button>
+            </div>
+        </div>
+        <div class="related-section">
+            <div class="section-title">
+                <h4>Related Course</h4>
+            </div>
+            <div class="card-list">
+                <div class="card-item">
+                    <a href="">
+                        <div class="card-img"><img src="./images/course-detail/related-course/course-01.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="title">拉花體驗班</div>
+                            <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-item">
+                    <a href="">
+                        <div class="card-img">
+                            <img src="./images/course-detail/related-course/course-01.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="title">拉花體驗班</div>
+                            <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-item">
+                    <a href="">
+                        <div class="card-img">
+                            <img src="./images/course-detail/related-course/course-01.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <div class="title">拉花體驗班</div>
+                            <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="section-link -lg">
+                <a href="./course-list.html">see more course</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <a href="./index.html">
+                    <img id="header-logo-img" src="./images/logo/logo_white.svg" alt="logo">
+                </a>
+                <div class="contact-info">
+                    <p class="address">104506台北市中山區南京東路三段219號5樓</p>
+                    <p class="tel"> 02-2712-0589</p>
+                </div>
+                <div class="scroll-top" id="scroll-top">
+                    <a href="">scroll <img src="./images/common/arrow-up.svg" alt="arrow-up icon"></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="copyright">©本網站為緯育TibaMe【第87期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/footer.js"></script>
+    <script src="./js/course-detail.js"></script>
+</body>
+
+</html>
