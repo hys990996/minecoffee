@@ -7,7 +7,7 @@ document.addEventListener('scroll', function () {
     let scrollHeight = window.scrollY
 
     //滾動高度超過400時更換header樣式
-    if (scrollHeight > 400) {
+    if (scrollHeight > 200) {
         header.classList.add("bg-Grayishorange", "_underline")
         logoImg.setAttribute("src", "./images/logo/logo_color.svg")
         headerBtn[0].setAttribute("src", "./images/common/cart-orange.svg")

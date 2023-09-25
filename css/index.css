@@ -26,13 +26,6 @@ div.main div.section-journal {
     /* height: 840px; */
 }
 
-div.main div.section-learn,
-div.main div.section-today,
-div.main div.section-journal,
-div.main div.section-locaton {
-    padding: 0 20px;
-}
-
 div.section-learn h2,
 div.section-journal h2,
 div.section-locaton h2 {
