@@ -33,7 +33,7 @@ footer.footer div.footer-container div.footer-info div.contact-info p {
     line-height: 32px;
 }
 
-footer.footer div.footer-container div.footer-info div.scroll-top a {
+footer.footer div.footer-container div.footer-info div.scroll-top button {
     text-decoration: underline;
     color: white;
     text-transform: uppercase;
@@ -42,7 +42,7 @@ footer.footer div.footer-container div.footer-info div.scroll-top a {
     font-size: 1.25rem;
 }
 
-footer.footer div.footer-container div.footer-info div.scroll-top a img {
+footer.footer div.footer-container div.footer-info div.scroll-top button img {
     width: 26px;
     height: 26px;
 }

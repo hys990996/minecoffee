@@ -13,7 +13,7 @@ div.form-section,
 div.related-section {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 
 /* ========== btn.next-step 處理區域 ==========  */
@@ -204,7 +204,7 @@ div.related-section div.card-list div.card-item {
 }
 
 div.related-section div.card-list div.card-item div.card-img {
-    width: 420px;
+    width: 100%;
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -267,7 +267,7 @@ div.related-section div.card-list div.card-item:hover div.card-img::after {
     position: absolute;
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: 400px;
     opacity: 0.25;
 }
 

@@ -7,7 +7,7 @@ div.main div.kv-banner img {
 
 @media screen and (min-width:1200px) {
     div.main div.kv-banner {
-        height: 840px;
+        /* height: 840px; */
         overflow: hidden;
     }
 }
@@ -115,7 +115,7 @@ div.main div.section-ourCoffee div.content div.detail {
 /*========== section-location 區域 ========== */
 
 div.main div.section-locaton {
-    padding: 20px 0 60px 0;
+    padding: 20px 20px 60px 20px;
     background-color: #D7C3AB;
 }
 
@@ -130,7 +130,7 @@ div.main div.section-locaton h2.section-title {
 
 div.main div.location-block {
     display: grid;
-    grid-template: 400px 250px / 700px 600px;
+    grid-template: 60% 40% / 55% 45%;
     grid-template-areas: "location-img location-map" "location-img location-info";
     gap: 0 0;
     /* justify-items: center; */
