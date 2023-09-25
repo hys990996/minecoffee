@@ -1,0 +1,56 @@
+/* ========== header 區域 ==========  */
+header.header {
+    position: sticky;
+}
+
+/* ========== common 區域 ==========  */
+div.main {
+    background-color: var(--Light-grayish-orange);
+    min-height: calc(100vh - 100px - 136px);
+}
+
+div.detail-section {
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+/* ==========section-title處理區域 ==========  */
+
+div.section-title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--Dark-orange);
+    padding: 40px 0;
+}
+
+div.detail-section div.datalist {
+    /* width: 50%; */
+    margin: 40px auto;
+}
+
+div.detail-section div.datalist div.subtitle {
+    color: var(--Dark-orange);
+    font-size: 1.25rem;
+    line-height: 42px;
+    font-weight: 550;
+    padding: 20px;
+}
+
+div.detail-section div.datalist div.img-list {
+    padding: 0 40px;
+    /* height: 120px; */
+    display: flex;
+    gap: 40px;
+}
+
+div.detail-section div.datalist div.img-list a {
+    display: inline-block;
+}
+
+div.detail-section div.datalist div.img-list img {
+    /* width: 200px; */
+    height: 120px;
+}

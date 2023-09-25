@@ -49,8 +49,16 @@ footer.footer div.footer-container div.footer-info div.scroll-top button img {
 
 footer.footer div.footer-container div.footer-copyright {
     margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
+footer.footer div.footer-container div.footer-copyright a {
+    text-decoration: underline;
+    margin-right: 20px;
+}
+
+footer.footer div.footer-container div.footer-copyright a,
 footer.footer div.footer-container div.footer-copyright p.copyright {
     color: white;
     text-align: right;
