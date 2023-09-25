@@ -70,6 +70,10 @@ header.header div.header-block div.header-nav ul.nav-list>li a {
     padding: 0 20px;
 }
 
+header.header.bg-Grayishorange div.header-block div.header-nav ul.nav-list>li a {
+    color: var(--Dark-orange);
+}
+
 /* 向下轉軸時更換選單顏色 */
 header.header div.header-block div.header-nav ul.nav-list>li a.scroll {
     color: var(--Dark-orange);
