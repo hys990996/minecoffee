@@ -1,3 +1,9 @@
+div.main {
+    top: -100px;
+    position: relative;
+    margin-bottom: -100px;
+}
+
 /*========== kv-banner 區域 ========== */
 
 div.main div.kv-banner img {

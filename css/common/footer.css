@@ -1,6 +1,7 @@
 footer.footer {
     background-color: #B3542C;
     width: 100%;
+    min-width: 1400px;
 }
 
 footer.footer div.footer-container {

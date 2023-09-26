@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+div.main {
+    min-width: 1400px;
+}
+
 /* ========== 顏色變數 ========== */
 :root {
     --Dark-orange: #B3542C;

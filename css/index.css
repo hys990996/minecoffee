@@ -1,5 +1,8 @@
 div.main {
-    background-color: var(--Grayish-orange)
+    background-color: var(--Grayish-orange);
+    top: -100px;
+    position: relative;
+    margin-bottom: -100px;
 }
 
 /*========== kv-banner 區域 ========== */

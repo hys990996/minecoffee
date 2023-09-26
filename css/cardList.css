@@ -1,6 +1,9 @@
 /* ========== common 區域 ==========  */
 div.main {
     background-color: var(--Grayish-orange);
+    top: -100px;
+    position: relative;
+    margin-bottom: -100px;
 }
 
 /* ========== kv-banner 區域 ========== */
@@ -18,17 +21,9 @@ div.main div.kv-banner img {
 
 div.main div.kv-banner h1 {
     position: absolute;
-    top: 25%;
+    top: 250px;
     left: 15%;
     color: white;
-}
-
-div.main div.kv-banner h4 {
-    position: absolute;
-    top: 30%;
-    left: 15%;
-    color: white;
-    text-transform: capitalize;
 }
 
 
