@@ -1,9 +1,9 @@
 /* ========== common 區域 ==========  */
 div.main {
     background-color: var(--Grayish-orange);
-    top: -100px;
+    top: -105px;
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: -105px;
 }
 
 /* ========== kv-banner 區域 ========== */

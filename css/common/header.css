@@ -25,7 +25,7 @@ header.header.bg-Grayishorange {
 
 /* header加上底線*/
 header.header.bg-Grayishorange._underline {
-    border-bottom: 1px solid #a47152;
+    /* border-bottom: 1px solid #a47152; */
     /* opacity: 0.9; */
 }
 
@@ -110,6 +110,21 @@ header.header div.header-block div.header-nav ul.nav-list>li a:hover {
     border-bottom: 2px solid var(--Dark-orange);
 }
 
+
+/* 標註正在瀏覽的頁面 */
+/* header.header div.header-block div.header-nav ul.nav-list>li a:hover.-on {
+    border-bottom: 2px solid var(--Dark-orange);
+}
+
+header.header div.header-block div.header-nav ul.nav-list>li a.-on {
+    border-bottom: 6px solid white;
+    transform: translateY(5px);
+}
+
+header.header.bg-Grayishorange div.header-block div.header-nav ul.nav-list>li a.-on {
+    border-bottom: 6px solid var(--Dark-orange);
+    transform: translateY(5px);
+} */
 
 /*===== heade button 區域 ===== */
 

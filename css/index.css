@@ -1,8 +1,8 @@
 div.main {
     background-color: var(--Grayish-orange);
-    top: -100px;
+    top: -105px;
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: -105px;
 }
 
 /*========== kv-banner 區域 ========== */
@@ -336,10 +336,16 @@ div.main div.section-locaton div.location-block div.location-info {
     background-color: var(--Dark-orange);
     width: 100%;
     color: white;
+    position: relative;
 }
 
 div.main div.section-locaton div.location-block div.location-info div.info-block {
     padding: 36px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
 }
 
 

@@ -1,7 +1,7 @@
 div.main {
-    top: -100px;
+    top: -105px;
     position: relative;
-    margin-bottom: -100px;
+    margin-bottom: -105px;
 }
 
 /*========== kv-banner 區域 ========== */
@@ -17,6 +17,26 @@ div.main div.kv-banner img {
         overflow: hidden;
     }
 }
+
+/*========== common 區域 ========== */
+div.main div.content {
+    display: flex;
+    flex-direction: column;
+}
+
+div.main div.content div.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+div.main div.content div.detail {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 32px;
+    width: 660px;
+}
+
 
 /*========== section-slogan 區域 ========== */
 div.main div.section-slogan {
@@ -61,17 +81,11 @@ div.main div.section-highQ div.content {
 }
 
 div.main div.section-highQ div.content div.title {
-    font-size: 2.5rem;
-    font-weight: 700;
     color: #59818A;
 }
 
 div.main div.section-highQ div.content div.detail {
-    font-size: 1.25rem;
-    font-weight: 400;
     color: #59818A;
-    line-height: 42px;
-    width: 660px;
 }
 
 /*========== section-ourCoffee 區域 ========== */
@@ -99,23 +113,15 @@ div.main div.section-ourCoffee::before {
 }
 
 div.main div.section-ourCoffee div.content {
-    display: flex;
-    flex-direction: column;
     padding-right: 120px;
 }
 
 div.main div.section-ourCoffee div.content div.title {
-    font-size: 2.5rem;
-    font-weight: 700;
     color: #452011;
 }
 
 div.main div.section-ourCoffee div.content div.detail {
-    font-size: 1.25rem;
-    font-weight: 400;
     color: #452011;
-    line-height: 42px;
-    width: 660px;
 }
 
 /*========== section-location 區域 ========== */
@@ -170,10 +176,16 @@ div.main div.section-locaton div.location-block div.location-info {
     background-color: #B3542C;
     width: 100%;
     color: white;
+    position: relative;
 }
 
 div.main div.section-locaton div.location-block div.location-info div.info-block {
     padding: 36px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
 }
 
 
