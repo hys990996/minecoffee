@@ -32,13 +32,14 @@ div.tabContainer div.card-section {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-top: 40px;
 }
 
 /* 預設三欄 */
 div.tabContainer div.card-item {
     width: calc((100% - 32px)/3);
     margin-right: 16px;
-    padding-top: 56px;
+
     display: flex;
     flex-direction: column;
 }

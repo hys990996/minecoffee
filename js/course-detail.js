@@ -53,8 +53,8 @@ function addOrRemoveAccordion(action) {
             let accordionNum = document.getElementsByClassName('accordion-item').length
 
             //新增最外層的<div class="accordion-item"></div>
-            let formContent = document.createElement('div')
-            formContent.className = 'accordion-item'
+            let accordionItem = document.createElement('div')
+            accordionItem.className = 'accordion-item'
 
             //新增<input type="checkbox" id="cd1"> 元素
             //id的數量＝目前的accordion-item數量+1
@@ -62,7 +62,7 @@ function addOrRemoveAccordion(action) {
             let inputCheckbox = document.createElement('input')
             inputCheckbox.type = 'checkbox'
             inputCheckbox.id = `cd${accordionNum + 1}`
-            formContent.appendChild(inputCheckbox)
+            accordionItem.appendChild(inputCheckbox)
 
             //新增<label for="cd1" data-name="王小明"></label> 元素
             //for屬性＝input的id
@@ -72,7 +72,7 @@ function addOrRemoveAccordion(action) {
             labelCheckbox.setAttribute('data-name', `User Name`)
             labelCheckbox.innerHTML = `<img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
             <img src="./images/common/arrow-down.svg" alt="icon" class="arrow-down">`
-            formContent.appendChild(labelCheckbox)
+            accordionItem.appendChild(labelCheckbox)
 
             //新增<div class="form-content"></div> 元素
             //innerHTML固定內容
@@ -109,11 +109,17 @@ function addOrRemoveAccordion(action) {
                 <li>堅果</li>
                 <li>其他</li>
             </ul>
-                                    </div>`
-            formContent.appendChild(divContent)
+        </div>`
+            accordionItem.appendChild(divContent)
+
+            //新增 <button id="saveBtn">Save</button> 元素
+            let accordionBtn = document.createElement('button')
+            accordionBtn.id = 'saveBtn'
+            accordionBtn.innerText = `save`
+            accordionItem.appendChild(accordionBtn)
 
             //最後將accordion-item元素append進去父節點accordion_section
-            accordion_section.appendChild(formContent)
+            accordion_section.appendChild(accordionItem)
     }
 
 

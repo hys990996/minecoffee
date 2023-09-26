@@ -198,3 +198,26 @@ div.form-section div.accordion-section div.accordion-item.-Light-grayish-orange 
 div.form-section div.accordion-section div.accordion-item.-Light-grayish-orange div.form-content div.leftside input[type="text"]::placeholder {
     color: var(--Dark-cyan);
 }
+
+
+/*======== 處理saveBtn 區域 ====== */
+
+button#saveBtn {
+    display: none;
+    margin: 0 auto;
+    color: var(--Dark-cyan);
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    height: 50px;
+
+}
+
+button#saveBtn:hover {
+    border-bottom: 1px solid var(--Dark-cyan);
+}
+
+/* 打開顯示btn */
+div.form-section div.accordion-section div.accordion-item input[type=checkbox]:checked~button#saveBtn {
+    display: block;
+}

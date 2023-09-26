@@ -122,7 +122,7 @@ div.lightbox div.form-section div.accordion-section {
     margin: 40px;
 }
 
-div.lightbox div.form-section div.accordion-section button {
+div.lightbox div.form-section div.accordion-section button.btn_close {
     position: absolute;
     top: 40px;
     right: 20px;
