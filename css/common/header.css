@@ -69,6 +69,7 @@ header.header div.header-block div.header-nav ul.nav-list>li a {
     color: white;
     font-weight: 600;
     padding: 0 20px;
+    font-family: 'Futura';
 }
 
 header.header.bg-Grayishorange div.header-block div.header-nav ul.nav-list>li a {
@@ -84,7 +85,7 @@ header.header div.header-block div.header-nav ul.nav-list>li a.scroll {
 /* 製作hover效果 */
 header.header div.header-block div.header-nav ul.nav-list>li a::before {
     content: attr(data-name);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--Dark-orange);
     position: absolute;
     top: 50%;
@@ -92,7 +93,6 @@ header.header div.header-block div.header-nav ul.nav-list>li a::before {
     transform: translate(-50%, -50%);
     opacity: 0;
     white-space: nowrap;
-    letter-spacing: 2px;
     font-weight: 600;
 }
 

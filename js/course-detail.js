@@ -69,7 +69,7 @@ function addOrRemoveAccordion(action) {
             //再append進去父節點accordion-item
             let labelCheckbox = document.createElement('label')
             labelCheckbox.setAttribute('for', `cd${accordionNum + 1}`)
-            labelCheckbox.setAttribute('data-name', `User Name`)
+            labelCheckbox.setAttribute('data-name', `Name`)
             labelCheckbox.innerHTML = `<img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
             <img src="./images/common/arrow-down.svg" alt="icon" class="arrow-down">`
             accordionItem.appendChild(labelCheckbox)
@@ -89,25 +89,25 @@ function addOrRemoveAccordion(action) {
             <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="0"
                 step="50">
             <ul class="option">
-                <li>淺焙</li>
-                <li>中焙</li>
-                <li>深焙</li>
+                <li>Light</li>
+                <li>Medium</li>
+                <li>Dark</li>
             </ul>
             <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="50"
                 step="50">
             <ul class="option">
-                <li>酸</li>
-                <li>適中</li>
-                <li>苦</li>
+                <li>Sour</li>
+                <li>Neutral</li>
+                <li>Bitter</li>
             </ul>
             <input name="roast-level" type="range" id="roast-level" min="0" max="100" value="25"
                 step="25">
             <ul class="option">
-                <li>花香</li>
-                <li>果香</li>
-                <li>甜味</li>
-                <li>堅果</li>
-                <li>其他</li>
+                <li>Floral</li>
+                <li>Fruity</li>
+                <li>Caramel</li>
+                <li>Nuts</li>
+                <li>Others</li>
             </ul>
         </div>`
             accordionItem.appendChild(divContent)

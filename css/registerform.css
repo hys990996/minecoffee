@@ -10,7 +10,7 @@ div.form-section div.form-title.-no-padding {
 
 div.form-section div.form-title h4 {
     border-bottom: 1px solid var(--Dark-cyan);
-    width: 115px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
 }
@@ -210,7 +210,8 @@ button#saveBtn {
     text-transform: uppercase;
     margin-bottom: 16px;
     height: 50px;
-
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 button#saveBtn:hover {

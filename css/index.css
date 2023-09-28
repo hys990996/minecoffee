@@ -30,10 +30,12 @@ div.main div.section-journal {
 }
 
 div.section-learn h2,
+div.section-today h2,
 div.section-journal h2,
 div.section-locaton h2 {
     color: #B3542C;
     text-align: center;
+    font-family: 'Futura';
 }
 
 /*========== section-learn 區域 ========== */
@@ -96,19 +98,21 @@ div.section-learn div.course-block div.course-item div.course-info {
     left: 0;
     bottom: 0;
     color: var(--Grayish-orange);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 div.section-learn div.course-block div.course-item div.course-info p.course-title {
     font-size: 1.5rem;
     line-height: 42px;
+    text-transform: capitalize;
+    font-family: 'Futura';
 }
 
 div.section-learn div.course-block div.course-item div.course-info p.description {
-    font-size: 1rem;
+    font-size: 1.25rem;
     line-height: 24px;
 }
 
@@ -356,5 +360,6 @@ div.main div.section-locaton div.location-block div.location-info div.info-block
 
 div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item div.title {
     flex-basis: 145px;
+    flex-shrink: 0;
     text-transform: capitalize;
 }

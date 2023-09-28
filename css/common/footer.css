@@ -40,7 +40,8 @@ footer.footer div.footer-container div.footer-info div.scroll-top button {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    font-family:'Optima', 'Noto Sans TC';
 }
 
 footer.footer div.footer-container div.footer-info div.scroll-top button img {
@@ -63,6 +64,5 @@ footer.footer div.footer-container div.footer-copyright a,
 footer.footer div.footer-container div.footer-copyright p.copyright {
     color: white;
     text-align: right;
-    font-size: 14px;
     font-weight: 300;
 }
