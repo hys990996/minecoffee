@@ -42,7 +42,7 @@ div.scroll-top {
     display: none;
 }
 
-div.scroll-top button {
+/* div.scroll-top button {
     text-decoration: underline;
     color: var(--Dark-cyan);
     text-transform: uppercase;
@@ -50,7 +50,7 @@ div.scroll-top button {
     align-items: center;
     font-size: 1.15rem;
     font-family: 'Optima', 'Noto Sans TC';
-}
+} */
 
 div.scroll-top button img {
     width: 30px;
