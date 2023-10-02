@@ -10,23 +10,25 @@
     <link rel="stylesheet" href="./css/common/all.css">
     <link rel="stylesheet" href="./css/common/header.css">
     <link rel="stylesheet" href="./css/common/footer.css">
-    <link rel="stylesheet" href="./css/about-us.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/about-us-n.css">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="header -Light-grayish-orange" id="header">
         <div class="header-block">
             <div class="header-logo">
                 <a href="./index.html">
-                    <img id="header-logo-img" src="./images/logo/logo_white.svg" alt="header-logo">
+                    <img id="header-logo-img" src="./images/logo/logo_color.svg" alt="header-logo">
                 </a>
             </div>
             <div class="header-nav">
                 <ul class="nav-list">
-                    <li><a href="" class="nav-item -on" data-name="關於我們">About</a></li>
-                    <li><a href="./course-list.html" class="nav-item" data-name="體驗課程">Learn</a></li>
-                    <li><a href="./product-list.html" class="nav-item" data-name="精選商品">Product</a></li>
-                    <li><a href="./journal-list.html" class="nav-item" data-name="知識分享">Journal</a></li>
+                    <li><a href="" class="nav-item -on" data-name="About">About</a></li>
+                    <li><a href="./course-list.html" class="nav-item" data-name="Learn">Learn</a></li>
+                    <li><a href="./product-list.html" class="nav-item" data-name="Product">Product</a></li>
+                    <li><a href="./journal-list.html" class="nav-item" data-name="Journal">Journal</a></li>
                 </ul>
             </div>
             <div class="header-button">
@@ -36,33 +38,73 @@
         </div>
     </header>
     <div class="main">
-        <div class="kv-banner">
-            <a href="">
-                <img src="./images/about-us/banner-2.png" alt="banner">
-            </a>
+        <div class="main-backgroung">
+            <svg class="-a" xmlns="http://www.w3.org/2000/svg" width="100%" height="1298" viewBox="0 0 1440 1298"
+                fill="none">
+                <path opacity="0.5"
+                    d="M1482 2.00002C975.341 236.249 1263.88 440.423 970.084 604.801C676.288 769.18 528.821 471.203 180.115 654.084C-168.592 836.965 -269 1297 -269 1297"
+                    stroke="#CAD9DC" stroke-width="2" />
+            </svg>
+            <svg class="-b" xmlns="http://www.w3.org/2000/svg" width="100%" height="534" viewBox="0 0 1437 534"
+                fill="none">
+                <path opacity="0.5"
+                    d="M1437 0.999622C1122.51 468.259 964.089 69.1072 764.264 143.141C564.44 217.175 664.578 431.556 444.044 517.92C223.51 604.283 2 260 2 260"
+                    stroke="#EDC39C" stroke-width="2" />
+            </svg>
+        </div>
+        <div class="first-section">
+            <div class="title-section">
+                <h2>about us</h2>
+            </div>
+            <div class="banner-section">
+                <div class="image">
+                    <img src="./images/about-us/banner-2.png" alt="banner image">
+                </div>
+                <div class="slogan">
+                    Everyone can be the“Barista”with us
+                </div>
+            </div>
+        </div>
+        <div class="high-quality">
+            <div class="detail-info">
+                <div class="section-bg"></div>
+                <div class="title">
+                    <h3>High Quality</h3>
+                </div>
+                <div class="description">
+                    Our team consists of several internationally certified coffee experts and quality assessors,
+                    guaranteeing meticulous quality control for coffee and offering you the best brewing
+                    skills.
+                </div>
+            </div>
+            <div class="high-quality-img-h">
+                <img class="img-h" src="./images/about-us/about-us-1.jpg" alt="high-quality image">
+            </div>
+            <div class="high-quality-img-v">
+                <img class="img-v" src="./images/about-us/about-us-3.png" alt="">
+            </div>
+        </div>
+        <div class="high-quality -reverse">
+            <div class="detail-info">
+                <div class="section-bg"></div>
+                <div class="title">
+                    <h3>Our coffee</h3>
+                </div>
+                <div class="description">
+                    Our team consists of several internationally certified coffee experts and quality assessors,
+                    guaranteeing meticulous quality control for coffee and offering you the best brewing
+                    skills.
+                </div>
+            </div>
+            <div class="high-quality-img-h">
+                <img class="img-h" src="./images/about-us/about-us-4.png" alt="high-quality image">
+            </div>
+            <div class="high-quality-img-v">
+                <img class="img-v" src="./images/about-us/about-us-5.png" alt="">
+            </div>
+        </div>
 
-        </div>
-        <div class="section-slogan">
-            <div class="slogan-text">
-                “From seed to cup” <br> Everyone can be the“Barista”with us
-            </div>
-        </div>
-        <div class="section-highQ">
-            <div class="content">
-                <div class="title">High Quality</div>
-                <div class="detail">團隊有7位國際認證CQI咖啡品質鑑定師，從生豆挑選、採購、咖啡烘焙、杯測品管，都由國際級咖啡品質鑑定師把關，確保每一包送到您手上的咖啡豆都能表現出它的最佳風味。
-                </div>
-            </div>
-        </div>
-        <div class="section-ourCoffee">
-            <div class="content">
-                <div class="title">Our coffee</div>
-                <div class="detail">
-                    設立一棟咖啡烘焙工廠及教學中心，設有常備上百款咖啡生豆的大型儲存恆溫倉，並24小時處於低溫冷藏環境。無論是頂級精品競標咖啡生豆到商用配方生豆、烘焙完成熟豆，皆存放於優良環境。
-                </div>
-            </div>
-        </div>
-        <div class="section-locaton">
+        <div class="section-locaton about-us">
             <h2 class="section-title">
                 Location
             </h2>
@@ -80,7 +122,7 @@
                     <div class="info-block">
                         <div class="info-item">
                             <div class="title">tel</div>
-                            <div class="value">0227120589</div>
+                            <div class="value">02-27120589</div>
                         </div>
                         <div class="info-item">
                             <div class="title">email</div>
@@ -92,13 +134,15 @@
                         </div>
                         <div class="info-item">
                             <div class="title">Address</div>
-                            <div class="value">104台北市中山區南京東路三段219號5樓</div>
+                            <div class="value">5F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+
     </div>
     <footer class="footer">
         <div class="footer-container">
@@ -107,15 +151,15 @@
                     <img id="header-logo-img" src="./images/logo/logo_white.svg" alt="logo">
                 </a>
                 <div class="contact-info">
-                    <p class="address">104506台北市中山區南京東路三段219號5樓</p>
+                    <p class="address">5F., No. 219, Sec. 3, Nanjing E. Rd., Zhongshan Dist., Taipei City 104506</p>
                     <p class="tel"> 02-2712-0589</p>
                 </div>
                 <div class="scroll-top" id="scroll-top">
-                    <button>scroll <img src="./images/common/arrow-up.svg" alt="arrow-up icon"></button>
+                    <button><img src="./images/common/scroll-up.svg" alt="arrow-up icon"></button>
                 </div>
             </div>
             <div class="footer-copyright">
-                <a href="./reference.html">參考資料</a>
+                <a href="./reference.html">Reference</a>
                 <p class="copyright">©本網站為緯育TibaMe【第87期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</p>
             </div>
         </div>
