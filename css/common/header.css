@@ -23,6 +23,10 @@ header.header.bg-Grayishorange {
     background-color: var(--Grayish-orange);
 }
 
+header.header.-Light-grayish-orange {
+    background-color: var(--Light-grayish-orange);
+}
+
 /* header加上底線*/
 header.header.bg-Grayishorange._underline {
     border-bottom: 1px solid #a47152;
@@ -72,7 +76,13 @@ header.header div.header-block div.header-nav ul.nav-list>li a {
     font-family: 'Futura';
 }
 
+/* 底色為Grayish-orange時 更換選單顏色 */
 header.header.bg-Grayishorange div.header-block div.header-nav ul.nav-list>li a {
+    color: var(--Dark-orange);
+}
+
+/* header有-Light-grayish-orange時 更換選單顏色 */
+header.header.-Light-grayish-orange div.header-block div.header-nav ul.nav-list>li a {
     color: var(--Dark-orange);
 }
 

@@ -5,6 +5,9 @@
 
 div.main {
     min-width: 1400px;
+
+    /* ========== main區域 最小高度 ==========  */
+    min-height: calc(100vh - 100px - 136px);
 }
 
 /* ========== 顏色變數 ========== */
@@ -19,7 +22,7 @@ div.main {
 
 /* ========== 字體初始化 ========== */
 body {
-    font-family:'Optima', 'Noto Sans TC';
+    font-family: 'Optima', 'Noto Sans TC';
     /* font-family: 'Source Sans Pro', 'Noto Sans TC', '微軟正黑體', 'Microsoft JhengHei'; */
     font-size: 16px;
 }
@@ -48,11 +51,6 @@ h4 {
     line-height: 42px;
 }
 
-/* ========== main區域 最小高度 ==========  */
-
-div.main {
-    min-height: calc(100vh - 100px - 136px);
-}
 
 /* ========== btn 初始化 ==========  */
 
