@@ -9,7 +9,7 @@ div.main {
 /* ========== kv-banner 區域 ========== */
 
 div.main div.kv-banner {
-    height: 500px;
+    /* height: 500px; */
     overflow: hidden;
 }
 
