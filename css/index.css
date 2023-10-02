@@ -148,19 +148,22 @@ div.main div.section-today div.left-info div.product-info {
 }
 
 div.main div.section-today div.left-info div.product-info div.product-name {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 div.main div.section-today div.left-info div.product-info div.product-description {
-    font-size: 16px;
+    /* border-radius: 0px 0px 100px 0px; */
+    /* clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%); */
+    margin-top: 16px;
     font-weight: 400;
-    padding-top: 40px;
+    padding: 28px 0;
     line-height: 20px;
+    background: linear-gradient(270deg, rgba(200, 175, 146, 0.80) 0.24%, rgba(255, 255, 255, 0.00) 103.47%);
 }
 
 div.section-today div.left-info div.section-link {
-    padding-top: 40px;
+    padding-top: 28px;
 }
 
 div.main div.section-today div.right-img {
@@ -181,7 +184,7 @@ div.main div.section-today div.right-img::before {
     width: 200px;
     height: 100px;
     background-color: var(--Dark-orange);
-    z-index: -1;
+    z-index: -100;
     position: absolute;
     top: -30px;
     left: -30px;
@@ -362,4 +365,12 @@ div.main div.section-locaton div.location-block div.location-info div.info-block
     flex-basis: 145px;
     flex-shrink: 0;
     text-transform: capitalize;
+}
+
+/*========== section-location for about-us 區域 ========== */
+
+div.main div.section-locaton {
+    padding: 60px 20px;
+    background-color: var(--Grayish-orange);
+    margin-top: 60px;
 }
