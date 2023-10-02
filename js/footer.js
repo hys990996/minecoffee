@@ -1,4 +1,15 @@
 let scrollTop = document.getElementById('scroll-top');
+
+document.addEventListener('scroll', function () {
+    let scrollHeight = window.scrollY
+
+    if (scrollHeight > 400) {
+        scrollTop.style.display = 'block'
+    } else {
+        scrollTop.style.display = 'none'
+    }
+})
+
 scrollTop.addEventListener('click', function () {
 
     // window.animate({

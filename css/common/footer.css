@@ -34,19 +34,27 @@ footer.footer div.footer-container div.footer-info div.contact-info p {
     line-height: 32px;
 }
 
-footer.footer div.footer-container div.footer-info div.scroll-top button {
+div.scroll-top {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    z-index: 990;
+    display: none;
+}
+
+div.scroll-top button {
     text-decoration: underline;
-    color: white;
+    color: var(--Dark-cyan);
     text-transform: uppercase;
     display: flex;
     align-items: center;
     font-size: 1.15rem;
-    font-family:'Optima', 'Noto Sans TC';
+    font-family: 'Optima', 'Noto Sans TC';
 }
 
-footer.footer div.footer-container div.footer-info div.scroll-top button img {
-    width: 26px;
-    height: 26px;
+div.scroll-top button img {
+    width: 30px;
+    height: 30px;
 }
 
 footer.footer div.footer-container div.footer-copyright {
