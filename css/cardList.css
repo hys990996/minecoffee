@@ -19,6 +19,7 @@ div.main div.kv-banner img {
     position: relative;
 }
 
+
 div.main div.kv-banner h1 {
     position: absolute;
     top: 250px;
@@ -91,9 +92,8 @@ div.tabContainer div.card-item:hover div.card-img img:last-child {
 div.tabContainer div.card-item div.card-img::before {
     content: attr(data-info-1)'\A ' attr(data-info-2);
     white-space: pre;
-    width: 80%;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     color: var(--Grayish-orange);

@@ -21,6 +21,11 @@ header.header div.header-block {
 /* 更換header底色*/
 header.header.bg-Grayishorange {
     background-color: var(--Grayish-orange);
+    /* border-bottom: 1px solid #a47152; */
+}
+
+header.header.Light-grayish-orange {
+    background-color: var(--Light-grayish-orange);
 }
 
 /* header加上底線*/
@@ -69,9 +74,16 @@ header.header div.header-block div.header-nav ul.nav-list>li a {
     color: white;
     font-weight: 600;
     padding: 0 20px;
+    font-family: 'Futura';
 }
 
+/* 底色為Grayish-orange時 更換選單顏色 */
 header.header.bg-Grayishorange div.header-block div.header-nav ul.nav-list>li a {
+    color: var(--Dark-orange);
+}
+
+/* header有Light-grayish-orange時 更換選單顏色 */
+header.header.Light-grayish-orange div.header-block div.header-nav ul.nav-list>li a {
     color: var(--Dark-orange);
 }
 
@@ -84,7 +96,7 @@ header.header div.header-block div.header-nav ul.nav-list>li a.scroll {
 /* 製作hover效果 */
 header.header div.header-block div.header-nav ul.nav-list>li a::before {
     content: attr(data-name);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--Dark-orange);
     position: absolute;
     top: 50%;
@@ -92,7 +104,6 @@ header.header div.header-block div.header-nav ul.nav-list>li a::before {
     transform: translate(-50%, -50%);
     opacity: 0;
     white-space: nowrap;
-    letter-spacing: 2px;
     font-weight: 600;
 }
 
@@ -148,9 +159,9 @@ div.header-block div.header-button a:first-child:before {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     opacity: 0;
-    transition: transform 300ms linear;
+    /* transition: transform 300ms linear; */
 }
 
 div.header-block div.header-button a:first-child:hover img {
@@ -158,7 +169,7 @@ div.header-block div.header-button a:first-child:hover img {
 }
 
 div.header-block div.header-button a:first-child:hover:before {
-    transform: translateY(0);
+    transform: translateY(5px);
     opacity: 1;
 }
 
@@ -171,9 +182,9 @@ div.header-block div.header-button a:last-child:before {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     opacity: 0;
-    transition: transform 300ms linear;
+    /* transition: transform 300ms linear; */
 }
 
 div.header-block div.header-button a:last-child:hover img {
@@ -181,6 +192,6 @@ div.header-block div.header-button a:last-child:hover img {
 }
 
 div.header-block div.header-button a:last-child:hover:before {
-    transform: translateY(0);
+    transform: translateY(5px);
     opacity: 1;
 }

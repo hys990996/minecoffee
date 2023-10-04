@@ -28,7 +28,7 @@ div.section-title {
 
 /* ==========signin-form 處理區域 ==========  */
 
-div.sign-form {
+div.sign-form form {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -47,6 +47,7 @@ div.sign-form button {
     border-radius: 100px;
     font-size: 1rem;
     line-height: 42px;
+    text-transform: uppercase;
 }
 
 div.sign-form input[type="text"] {
@@ -90,4 +91,5 @@ div.sign-form p {
 div.sign-form p.register,
 div.sign-form p.signin {
     margin-top: 40px;
+    margin-bottom: 40px;
 }

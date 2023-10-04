@@ -19,6 +19,16 @@ div.related-section {
 /* ========== btn.next-step 處理區域 ==========  */
 
 button.next-step {
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 42px;
+    width: 200px;
+    background-color: var(--Dark-orange);
+    border-radius: 100px;
+    text-transform: uppercase;
+}
+/* button.next-step {
     color: var(--Dark-orange);
     font-size: 1.25rem;
     text-align: center;
@@ -65,19 +75,20 @@ button.next-step:hover::before {
 
 button.next-step:hover::after {
     width: 100%;
-}
+} */
 
 
-/* ========== detail-section 區域 ==========  */
+/* ========== detail-innerblock 區域 ==========  */
 
-div.detail-section {
+div.detail-innerblock{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
+    max-height: 780px;
 }
 
 /* ========== detail-section left區域 ==========  */
-div.detail-section div.left-side div.title {
+div.detail-section div.detail-innerblock div.left-side div.title {
     color: var(--Dark-cyan);
     font-size: 1.75rem;
     font-weight: 600;
@@ -85,49 +96,51 @@ div.detail-section div.left-side div.title {
     border-bottom: 1px solid var(--Dark-cyan);
 }
 
-div.detail-section div.left-side div.content {
+div.detail-section div.detail-innerblock div.left-side div.content {
     color: var(--Dark-cyan);
     font-weight: 400;
     line-height: 30px;
     margin-top: 16px;
 }
 
-div.detail-section div.left-side div.content div.detail-info {
+div.detail-section div.detail-innerblock div.left-side div.content div.description{
+    max-height: 360px;
+    overflow-y: scroll;
+}
+
+div.detail-section div.detail-innerblock div.left-side div.content div.detail-info {
     display: flex;
     padding-top: 8px;
 }
 
-div.detail-section div.left-side div.content div.detail-info div.info-title {
+div.detail-section div.detail-innerblock div.left-side div.content div.detail-info div.info-title {
     font-weight: 550;
 }
 
-div.detail-section div.left-side div.content div.detail-info div.info-title::after {
+div.detail-section div.detail-innerblock div.left-side div.content div.detail-info div.info-title::after {
     content: '|';
     padding-left: 8px;
 }
 
-div.detail-section div.left-side div.content div.detail-info div.info-text {
+div.detail-section div.detail-innerblock div.left-side div.content div.detail-info div.info-text {
     padding-left: 8px;
 }
 
 
-div.detail-section div.left-side div.btn-section {
+div.detail-section div.detail-innerblock div.left-side div.btn-section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
-div.detail-section div.left-side div.btn-section div.num-count {
+div.detail-section div.detail-innerblock div.left-side div.btn-section div.num-count {
     color: var(--Dark-orange);
     font-size: 1.25rem;
     text-align: center;
     line-height: 42px;
     width: 200px;
-}
-
-div.detail-section div.left-side div.btn-section div.num-count {
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -137,7 +150,7 @@ div.detail-section div.left-side div.btn-section div.num-count {
     padding: 5px 0;
 }
 
-div.detail-section div.left-side div.btn-section div.num-count img {
+div.detail-section div.detail-innerblock div.left-side div.btn-section div.num-count img {
     position: relative;
     vertical-align: middle;
 }
@@ -186,6 +199,9 @@ div.detail-section div.right-side ul.samllimg-list>li.imgItem.show img::before {
 
 
 /* ========== related-section 區域 ==========  */
+div.related-section{
+    padding-top: 120px;
+}
 
 div.related-section div.section-title {
     color: var(--Dark-orange);
@@ -195,7 +211,7 @@ div.related-section div.section-title {
 div.related-section div.card-list {
     display: flex;
     justify-content: center;
-    padding: 60px 40px;
+    padding: 40px;
 }
 
 div.related-section div.card-list div.card-item {
@@ -232,7 +248,7 @@ div.related-section div.card-list div.card-item div.card-info {
 div.related-section div.card-list div.card-item div.card-info div.title {
     font-size: 1.25rem;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 32px;
     border-bottom: 1px solid var(--Dark-cyan);
 }
 

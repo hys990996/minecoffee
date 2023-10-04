@@ -81,8 +81,8 @@ div.order-list div.order {
 }
 
 div.order-list div.order div.order-img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-image: url('../images/common/order.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -102,5 +102,10 @@ div.order-list div.order div.order-info div.order-data {
 
 div.order-list div.order a {
     text-decoration: none;
-    color: var(--Dark-orange);
+    color: white;
+    display: block;
+    line-height: 42px;
+    padding: 0 12px;
+    border-radius: 100px;
+    background-color: var(--Dark-orange);
 }
