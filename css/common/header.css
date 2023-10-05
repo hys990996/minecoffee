@@ -1,12 +1,18 @@
 header.header {
     background-color: transparent;
     width: 100%;
-    min-width: 1400px;
+    /* min-width: 1400px; */
     z-index: 999;
     position: sticky;
     top: 0;
     padding: 0 20px;
     height: 105px;
+}
+
+@media screen and (max-width:991.98px) {
+    header.header {
+        padding: 0;
+    }
 }
 
 header.header div.header-block {
@@ -16,6 +22,13 @@ header.header div.header-block {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:991.98px) {
+    header.header div.header-block {
+        display: block;
+    }
 }
 
 /* 更換header底色*/
@@ -49,14 +62,38 @@ header.header div.header-block div.header-logo img {
 header.header div.header-block div.header-nav {
     flex-grow: 1;
 
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+}
+
+@media screen and (max-width:991.98px) {
+    header.header div.header-block div.header-nav {
+        margin-top: 15px;
+        transform: translateX(100%);
+        transition: transform 500ms ease;
+    }
+
+    header.header div.header-block div.header-nav.show {
+        transform: translateX(0);
+        background-color: rgba(0, 0, 0, 0.30);
+    }
+
+    header.header.bg-Grayishorange div.header-block div.header-nav {
+        background-color: var(--Grayish-orange);
+    }
 }
 
 header.header div.header-block div.header-nav ul.nav-list {
     text-align: center;
     padding: 0;
+}
+
+@media screen and (max-width:991.98px) {
+    header.header div.header-block div.header-nav ul.nav-list {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 header.header div.header-block div.header-nav ul.nav-list>li {
@@ -111,14 +148,22 @@ header.header div.header-block div.header-nav ul.nav-list>li a:hover {
     color: transparent;
     transform: translateY(5px);
     transition: transform 300ms ease;
+    border-bottom: 2px solid var(--Dark-orange);
+}
+
+@media screen and (max-width:991.98px) {
+    header.header div.header-block div.header-nav ul.nav-list>li a:hover {
+        transform: translateY(0);
+        border-bottom: none;
+    }
+
+    header.header.bg-Grayishorange div.header-block div.header-nav ul.nav-list>li a:hover {
+        background-color: var(--Light-grayish-orange);
+    }
 }
 
 header.header div.header-block div.header-nav ul.nav-list>li a:hover::before {
     opacity: 1;
-}
-
-header.header div.header-block div.header-nav ul.nav-list>li a:hover {
-    border-bottom: 2px solid var(--Dark-orange);
 }
 
 
@@ -143,6 +188,24 @@ div.header-block div.header-button {
     display: flex;
     align-items: center;
     gap: 36px;
+}
+
+@media screen and (max-width:991.98px) {
+    div.header-block div.header-button {
+        justify-content: center;
+        padding: 40px 0;
+        transform: translateX(100%);
+        transition: transform 500ms ease;
+    }
+
+    div.header-block div.header-button.show {
+        transform: translateX(0);
+        background-color: rgba(0, 0, 0, 0.30);
+    }
+
+    header.header.bg-Grayishorange div.header-block div.header-button {
+        background-color: var(--Grayish-orange);
+    }
 }
 
 div.header-block div.header-button a {
@@ -194,4 +257,75 @@ div.header-block div.header-button a:last-child:hover img {
 div.header-block div.header-button a:last-child:hover:before {
     transform: translateY(5px);
     opacity: 1;
+}
+
+/*===== hamburger-btn 區域 ===== */
+div.hamburger-btn {
+    position: relative;
+    display: none;
+}
+
+@media screen and (max-width:991.98px) {
+    div.hamburger-btn {
+        display: block;
+    }
+
+}
+
+div.hamburger-btn span.hamburger-icon {
+    background-color: white;
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    right: 10px;
+    top: -40px;
+}
+
+/* 有Dark-orange時更換漢堡的顏色 */
+div.hamburger-btn.Dark-orange span.hamburger-icon {
+    background-color: var(--Dark-orange);
+}
+
+
+div.hamburger-btn span.hamburger-icon::before,
+div.hamburger-btn span.hamburger-icon::after {
+    content: '';
+    width: 30px;
+    background-color: white;
+    /* background-color: var(--Dark-orange); */
+    position: absolute;
+    height: 100%;
+    display: block;
+    transition: all .2s ease-out;
+}
+
+div.hamburger-btn span.hamburger-icon::before {
+    top: 10px;
+}
+
+div.hamburger-btn span.hamburger-icon::after {
+    top: -10px;
+}
+
+/* 有Dark-orange時更換漢堡的顏色 */
+div.hamburger-btn.Dark-orange span.hamburger-icon::before,
+div.hamburger-btn.Dark-orange span.hamburger-icon::after {
+    background-color: var(--Dark-orange);
+}
+
+
+/* 打開時變X */
+div.hamburger-btn.-on span.hamburger-icon {
+    background-color: transparent;
+}
+
+div.hamburger-btn.-on span.hamburger-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+div.hamburger-btn.-on span.hamburger-icon::after {
+    transform: rotate(45deg);
+    top: 0;
 }
