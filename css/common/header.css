@@ -48,6 +48,13 @@ header.header.bg-Grayishorange._underline {
 }
 
 
+@media screen and (max-width:991.98px) {
+    header.header.bg-Grayishorange._underline {
+        border-bottom: 0;
+    }
+}
+
+
 /*========== logo區域 ========== */
 header.header div.header-block div.header-logo {
     font-size: 0;
@@ -87,6 +94,10 @@ header.header div.header-block div.header-nav {
 
     header.header.bg-Grayishorange div.header-block div.header-nav {
         background-color: var(--Grayish-orange);
+    }
+
+    header.header.Light-grayish-orange div.header-block div.header-nav {
+        background-color: var(--Light-grayish-orange);
     }
 }
 
@@ -207,10 +218,16 @@ div.header-block div.header-button {
     div.header-block div.header-button.show {
         transform: translateX(0);
         background-color: rgba(0, 0, 0, 0.30);
+
     }
 
     header.header.bg-Grayishorange div.header-block div.header-button {
         background-color: var(--Grayish-orange);
+        border-bottom: 1px solid #a47152;
+    }
+
+    header.header.Light-grayish-orange div.header-block div.header-button {
+        background-color: var(--Light-grayish-orange);
     }
 }
 
