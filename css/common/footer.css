@@ -1,18 +1,26 @@
 footer.footer {
     background-color: #B3542C;
     width: 100%;
-    min-width: 1400px;
+    /* min-width: 1400px; */
 }
 
 footer.footer div.footer-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 25px 0 5px 0;
+    padding: 25px 20px;
 }
 
 footer.footer div.footer-container div.footer-info {
     display: flex;
 }
+
+@media screen and (max-width:991.98px) {
+    footer.footer div.footer-container div.footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 footer.footer div.footer-container div.footer-info a {
     margin-right: 20px;
@@ -29,10 +37,18 @@ footer.footer div.footer-container div.footer-info div.contact-info {
     flex-grow: 1;
 }
 
+@media screen and (max-width:991.98px) {
+    footer.footer div.footer-container div.footer-info div.contact-info {
+        text-align: center;
+    }
+}
+
 footer.footer div.footer-container div.footer-info div.contact-info p {
     color: white;
     line-height: 32px;
 }
+
+/* scroll-top 區域 */
 
 div.scroll-top {
     position: fixed;
@@ -42,25 +58,18 @@ div.scroll-top {
     display: none;
 }
 
-/* div.scroll-top button {
-    text-decoration: underline;
-    color: var(--Dark-cyan);
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    font-size: 1.15rem;
-    font-family: 'Optima', 'Noto Sans TC';
-} */
-
 div.scroll-top button img {
     width: 30px;
     height: 30px;
 }
 
+/* footer-copyright 區域 */
+
 footer.footer div.footer-container div.footer-copyright {
     margin-top: 10px;
     display: flex;
     justify-content: flex-end;
+    font-size: 0.9rem;
 }
 
 footer.footer div.footer-container div.footer-copyright a {
@@ -73,4 +82,22 @@ footer.footer div.footer-container div.footer-copyright p.copyright {
     color: white;
     text-align: right;
     font-weight: 300;
+}
+
+@media screen and (max-width:991.98px) {
+    footer.footer div.footer-container div.footer-copyright {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer.footer div.footer-container div.footer-copyright a {
+        order: 2;
+        line-height: 24px;
+    }
+
+    footer.footer div.footer-container div.footer-copyright p.copyright {
+        order: 1;
+        text-align: center;
+        line-height: 24px;
+    }
 }
