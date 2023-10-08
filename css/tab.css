@@ -27,6 +27,13 @@ div.main div.tabSet>label {
     text-transform: capitalize;
 }
 
+@media screen and (max-width:767.98px) {
+
+    div.main div.tabSet>label {
+        font-size: 1.1rem;
+    }
+}
+
 
 div.main div.tabSet>label.-Grayish-orange {
     color: var(--Grayish-orange);
@@ -68,8 +75,6 @@ div.main div.tabSet>label:hover::after {
 /* ========== tab-Section 區域 ========== */
 
 /* 隱藏 */
-div.tabContainer div.tab-Section,
-div.tabContainer div.tab-Section,
 div.tabContainer div.tab-Section {
     max-width: 1400px;
     width: calc((100% - 120px));
@@ -78,9 +83,24 @@ div.tabContainer div.tab-Section {
     display: none;
 }
 
+@media screen and (max-width:767.98px) {
+
+    div.tabContainer div.tab-Section {
+        width: calc((100% - 80px));
+        padding: 20px 0 60px 0;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+
+    div.tabContainer div.tab-Section {
+        width: calc((100% - 40px));
+        padding: 0 0 40px 0;
+    }
+}
+
 /* 顯示 */
-div.tabContainer div.tab-Section.show,
-div.tabContainer div.tab-Section.show,
+
 div.tabContainer div.tab-Section.show {
     display: block;
 }

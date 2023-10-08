@@ -50,7 +50,8 @@ div.sign-form button {
     text-transform: uppercase;
 }
 
-div.sign-form input[type="text"] {
+div.sign-form input[type="text"],
+div.sign-form input[type="tel"] {
     border-color: transparent;
     padding: 4px 20px;
 }
