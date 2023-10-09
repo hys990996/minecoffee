@@ -24,6 +24,7 @@ document.addEventListener('scroll', function () {
             hamburgerBtn.classList.add("Dark-orange")
 
         } else { //滾動高度小於200時恢復header樣式
+
             header.classList.remove("bg-Grayishorange", "_underline")
             Array.from(liItem).forEach(element => {
                 element.classList.remove("scroll")

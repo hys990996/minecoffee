@@ -37,7 +37,8 @@ header.header div.header-block {
 
     header.header div.header-block.show {
         transform: translateX(0);
-        background-color: rgba(0, 0, 0, 0.60);
+        /* background-color: rgba(0, 0, 0, 0.60); */
+        background-color: var(--Grayish-orange);
         margin-top: 22px;
         opacity: 1;
     }
@@ -140,7 +141,14 @@ header.header div.header-block div.header-nav ul.nav-list>li a {
     font-family: 'Futura';
 }
 
+@media screen and (max-width:991.98px) {
+    header.header div.header-block div.header-nav ul.nav-list>li a {
+        color: var(--Dark-orange);
+    }
+}
+
 /* 底色為Grayish-orange時 更換選單顏色 */
+
 header.header.bg-Grayishorange div.header-block div.header-nav ul.nav-list>li a {
     color: var(--Dark-orange);
 }
