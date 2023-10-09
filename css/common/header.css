@@ -37,14 +37,13 @@ header.header div.header-block {
 
     header.header div.header-block.show {
         transform: translateX(0);
-        background-color: rgba(0, 0, 0, 0.30);
+        background-color: rgba(0, 0, 0, 0.60);
         margin-top: 22px;
         opacity: 1;
     }
 
     header.header.bg-Grayishorange div.header-block {
         background-color: var(--Grayish-orange);
-        border-bottom: 1px solid #a47152;
     }
 
     header.header.Light-grayish-orange div.header-block {
