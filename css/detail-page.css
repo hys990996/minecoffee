@@ -357,6 +357,7 @@ div.related-section div.card-list div.card-item div.card-info div.title {
     font-weight: 500;
     line-height: 32px;
     border-bottom: 1px solid var(--Dark-cyan);
+    text-transform: capitalize;
 }
 
 @media screen and (max-width:767.98px) {

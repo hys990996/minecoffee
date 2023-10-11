@@ -134,6 +134,18 @@ div.form-section div.accordion-section div.accordion-item input[type=checkbox]+l
     }
 }
 
+@media screen and (max-width:575.98px) {
+
+    div.form-section div.accordion-section div.accordion-item input[type=checkbox]+label img.arrow-down {
+        width: 30px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item input[type=checkbox]+label img.user-icon {
+        width: 30px;
+    }
+
+}
+
 div.form-section div.accordion-section div.accordion-item input[type=checkbox]:checked+label {
     color: transparent;
 }
@@ -180,8 +192,14 @@ div.form-section div.accordion-section div.accordion-item div.form-content div.l
 @media screen and (max-width:991.98px) {
     div.form-section div.accordion-section div.accordion-item div.form-content div.leftside {
         gap: 24px;
-        padding: 8px 20px;
+        padding: 8px 48px;
         flex-basis: auto;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.form-section div.accordion-section div.accordion-item div.form-content div.leftside {
+        padding: 8px 32px;
     }
 }
 
@@ -191,7 +209,7 @@ div.form-section div.accordion-section div.accordion-item div.form-content div.l
     line-height: 42px;
     border: 1px solid #F0E8DF;
     background-color: #F0E8DF;
-    text-transform: uppercase;
+    color: var(--Dark-cyan);
     text-align: center;
     outline: 0;
     font-size: 1.25rem;
@@ -199,6 +217,12 @@ div.form-section div.accordion-section div.accordion-item div.form-content div.l
 
 div.form-section div.accordion-section div.accordion-item div.form-content div.leftside input[type="text"]:focus {
     border-color: #B3542C;
+}
+
+div.form-section div.accordion-section div.accordion-item div.form-content div.leftside input[type="text"]::placeholder {
+    color: var(--Dark-cyan);
+    opacity: .5;
+    text-transform: uppercase;
 }
 
 /* ========== form-section accordion-right side內容 區域 ==========  */
@@ -213,9 +237,15 @@ div.form-section div.accordion-section div.accordion-item div.form-content div.r
 @media screen and (max-width:991.98px) {
     div.form-section div.accordion-section div.accordion-item div.form-content div.rightside {
         gap: 24px;
-        padding: 8px 20px;
+        padding: 8px 48px;
         flex-basis: auto;
         margin: 0;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.form-section div.accordion-section div.accordion-item div.form-content div.rightside {
+        padding: 8px 32px;
     }
 }
 
@@ -261,19 +291,87 @@ div.form-section div.accordion-section div.accordion-item div.form-content div.r
 
 
 
-/*======== 若有包含-Light-grayish-orange更換背景顏色及input樣式 ====== */
-div.form-section div.accordion-section div.accordion-item.-Light-grayish-orange {
+/*======== 若有包含-Lightbox 更換背景顏色及input樣式 ====== */
+div.form-section div.accordion-section div.accordion-item.-Lightbox {
     background-color: var(--Light-grayish-orange);
 }
 
-div.form-section div.accordion-section div.accordion-item.-Light-grayish-orange div.form-content div.leftside input[type="text"] {
+div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.leftside input[type="text"] {
     border: 1px solid var(--Dark-cyan);
-}
-
-div.form-section div.accordion-section div.accordion-item.-Light-grayish-orange div.form-content div.leftside input[type="text"]::placeholder {
     color: var(--Dark-cyan);
+    text-transform: none;
 }
 
+div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.leftside input[type="text"]::placeholder {
+    color: var(--Dark-cyan);
+    opacity: .5;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1199.98px) {
+    div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.leftside {
+        gap: 20px;
+        padding: 48px 0 48px 48px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.rightside {
+        padding: 0 48px 48px 0;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label::after {
+        flex-basis: 75%;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label {
+        padding-left: 40px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label::after {
+        flex-basis: 70%;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.leftside {
+        gap: 20px;
+        padding: 24px 48px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.rightside {
+        padding: 24px 48px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label {
+        padding-left: 24px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.leftside {
+        gap: 20px;
+        padding: 12px 24px 0 24px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-content div.rightside {
+        padding: 12px 24px 24px 24px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label img.arrow-down {
+        width: 30px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label img.user-icon {
+        width: 30px;
+    }
+
+    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label::after {
+        /* flex-basis: 65%; */
+    }
+}
 
 /*======== 處理saveBtn 區域 ====== */
 

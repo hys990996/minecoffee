@@ -9,9 +9,16 @@ div.main {
 }
 
 div.cart-section {
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 80px 20px;
+}
+
+@media screen and (max-width:767.98px) {
+    div.cart-section {
+        padding: 40px 20px 80px 20px;
+    }
 }
 
 /* ========== cart-title 處理區域 ==========  */
@@ -30,6 +37,12 @@ div.cart-list {
     gap: 40px;
 }
 
+@media screen and (max-width:991.98px) {
+    div.cart-list {
+        flex-direction: column;
+    }
+}
+
 div.cart-list div.left-items {
     display: flex;
     flex-direction: column;
@@ -42,7 +55,7 @@ div.left-items div.product-items div.subtitle,
 div.left-items div.course-items div.subtitle {
     color: var(--Dark-cyan);
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 42px;
     text-transform: capitalize;
 }
@@ -69,25 +82,144 @@ div.left-items div.course-items div.item div.item-detail {
     padding: 12px 0;
 }
 
+@media screen and (max-width:1199.98px) {
+
+    div.left-items div.product-items div.item div.item-detail,
+    div.left-items div.course-items div.item div.item-detail {
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+
+    div.left-items div.product-items div.item div.item-detail,
+    div.left-items div.course-items div.item div.item-detail {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        gap: 8px;
+    }
+}
+
+
+@media screen and (max-width:767.98px) {
+
+    div.left-items div.product-items div.item div.item-detail object,
+    div.left-items div.course-items div.item div.item-detail object {
+        grid-row: 1/3;
+        width: 80px;
+    }
+
+    /* div.left-items div.product-items div.item div.item-detail img.item-img,
+    div.left-items div.course-items div.item div.item-detail img.item-img {
+        grid-row: 1/3;
+        width: 80px;
+    } */
+}
+
+@media screen and (max-width:575.98px) {
+
+    div.left-items div.product-items div.item div.item-detail object,
+    div.left-items div.course-items div.item div.item-detail object {
+        width: 60px;
+    }
+}
+
 div.left-items div.product-items div.item div.item-detail span.item-name,
 div.left-items div.course-items div.item div.item-detail span.item-name {
+    font-size: 1.25rem;
     flex-grow: 1;
 }
+
+@media screen and (max-width:575.98px) {
+
+    div.left-items div.product-items div.item div.item-detail span.item-name,
+    div.left-items div.course-items div.item div.item-detail span.item-name {
+        font-size: 1.1rem;
+    }
+
+    div.left-items div.course-items div.item div.item-detail span.item-name button img {
+        width: 20px;
+    }
+}
+
 
 div.left-items div.product-items div.item div.item-detail div.num-count {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 24px;
     border: 1px solid var(--Dark-cyan);
     border-radius: 100px;
     line-height: 46px;
 }
 
+@media screen and (max-width:1199.98px) {
+
+    div.left-items div.product-items div.item div.item-detail div.num-count {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    div.left-items div.product-items div.item div.item-detail div.num-count {
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+
+    div.left-items div.product-items div.item div.item-detail div.num-count {
+        gap: 12px;
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+
+    div.left-items div.product-items div.item div.item-detail div.num-count {
+        line-height: 24px;
+        /* padding: 4px 0; */
+    }
+}
+
+
 div.left-items div.course-items div.item div.item-detail div.num-count span {
     padding: 10px 65px;
     border: 1px solid var(--Dark-cyan);
     border-radius: 100px;
     line-height: 46px;
+}
+
+@media screen and (max-width:1199.98px) {
+
+    div.left-items div.course-items div.item div.item-detail div.num-count span {
+        padding: 10px 52px;
+
+    }
+}
+
+@media screen and (max-width:991.98px) {
+
+    div.left-items div.course-items div.item div.item-detail div.num-count span {
+        padding: 10px 65px;
+
+    }
+}
+
+@media screen and (max-width:767.98px) {
+
+    div.left-items div.course-items div.item div.item-detail div.num-count span {
+        padding: 10px 52px;
+
+    }
+}
+
+@media screen and (max-width:575.98px) {
+
+    div.left-items div.course-items div.item div.item-detail div.num-count span {
+        line-height: 24px;
+        padding: 4px 52px;
+    }
 }
 
 /* ==========  lightbox 處理區域 ==========  */
@@ -114,6 +246,24 @@ div.lightbox div.form-section {
     overflow: scroll;
 }
 
+@media screen and (max-width:991.98px) {
+    div.lightbox div.form-section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.lightbox div.form-section {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.lightbox div.form-section {
+        width: 90%;
+    }
+}
+
 div.lightbox div.form-section div.form-title {
     position: relative;
 }
@@ -122,10 +272,22 @@ div.lightbox div.form-section div.accordion-section {
     margin: 40px;
 }
 
+@media screen and (max-width:575.98px) {
+    div.lightbox div.form-section div.accordion-section {
+        margin: 20px 0;
+    }
+}
+
 div.lightbox div.form-section div.accordion-section button.btn_close {
     position: absolute;
     top: 40px;
     right: 20px;
+}
+
+@media screen and (max-width:575.98px) {
+    div.lightbox div.form-section div.accordion-section button.btn_close {
+        top: 12px;
+    }
 }
 
 /* ========== cart-list right-summary 處理區域 ==========  */
@@ -135,10 +297,30 @@ div.cart-list div.right-summary {
     flex-shrink: 0;
 }
 
+@media screen and (max-width:1199.98px) {
+    div.cart-list div.right-summary {
+        flex-basis: 350px;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    div.cart-list div.right-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 div.right-summary h4.sumtitle {
     color: var(--Dark-orange);
     font-weight: 600;
 
+}
+
+@media screen and (max-width:991.98px) {
+    div.right-summary h4.sumtitle {
+        align-self: flex-start;
+    }
 }
 
 div.right-summary div.subtitle,
@@ -151,10 +333,45 @@ div.right-summary div.total {
     width: 80%;
 }
 
+@media screen and (max-width:991.98px) {
+
+    div.right-summary div.subtitle,
+    div.right-summary div.count,
+    div.right-summary div.total {
+        margin: 0px auto;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+
+    div.right-summary div.subtitle,
+    div.right-summary div.count,
+    div.right-summary div.total {
+        font-size: 1.1rem;
+    }
+}
+
 div.right-summary div.subtitle,
 div.right-summary div.total {
     margin-top: 40px;
+    font-weight: 550;
+}
 
+@media screen and (max-width:991.98px) {
+
+    div.right-summary div.subtitle,
+    div.right-summary div.total {
+        margin: 40px auto 0px auto;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+
+    div.right-summary div.subtitle,
+    div.right-summary div.total {
+        margin: 20px auto 0px auto;
+    }
 }
 
 div.right-summary div.subtitle {
@@ -181,4 +398,10 @@ div.right-summary button.check-out {
     background-color: var(--Dark-orange);
     border-radius: 100px;
     margin-top: 44px;
+}
+
+@media screen and (max-width:991.98px) {
+    div.right-summary button.check-out {
+        /* margin: 44px auto 0px auto; */
+    }
 }
