@@ -6,16 +6,53 @@ div.main {
 }
 
 /*========== kv-banner 區域 ========== */
+div.main div.kv-banner {
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
 
 div.main div.kv-banner img {
     width: 100%;
     vertical-align: bottom;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (max-width:1199.98px) {
     div.main div.kv-banner {
-        height: 840px;
-        overflow: hidden;
+        height: 640px;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    div.main div.kv-banner img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.kv-banner {
+        height: 600px;
+    }
+
+    div.main div.kv-banner img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.main div.kv-banner {
+        height: 550px;
+    }
+
+    div.main div.kv-banner img {
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -25,6 +62,7 @@ div.main div.section-learn,
 div.main div.section-today,
 div.main div.section-journal {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     /* height: 840px; */
 }
@@ -41,7 +79,7 @@ div.section-locaton h2 {
 /*========== section-learn 區域 ========== */
 
 div.section-learn {
-    padding: 40px 54px 54px 20px;
+    padding: 40px 20px;
 }
 
 div.section-learn div.section-description {
@@ -53,8 +91,8 @@ div.section-learn div.section-description {
 
 div.section-learn div.section-link {
     padding-top: 18px;
+    font-weight: 600;
 }
-
 
 div.section-learn div.course-block {
     width: 100%;
@@ -64,6 +102,7 @@ div.section-learn div.course-block {
     height: 500px;
     display: inline-flex;
     align-items: center;
+    overflow: hidden;
 }
 
 div.section-learn div.course-block div.course-item {
@@ -73,6 +112,43 @@ div.section-learn div.course-block div.course-item {
     left: 50%;
     transform: translateX(-50%);
     transition: all .3s linear;
+}
+
+@media screen and (max-width:1199.98px) {
+    div.section-learn div.course-block {
+        margin-top: 0px;
+    }
+
+    div.section-learn div.course-block div.course-item {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    div.section-learn div.course-block {
+        height: 400px;
+    }
+
+    div.section-learn div.course-block div.course-item {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.section-learn div.course-block div.course-item {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.section-learn div.course-block {
+        height: 300px;
+    }
+
+    div.section-learn div.course-block div.course-item {
+        width: 250px;
+    }
+
 }
 
 div.section-learn div.course-block div.course-item.-selected-left,
@@ -87,8 +163,19 @@ div.section-learn div.course-block div.course-item.-selected-left {
 }
 
 div.section-learn div.course-block div.course-item.-selected-right {
-    left: 65%;
+    left: 60%;
 }
+
+@media screen and (max-width:575.98px) {
+    div.section-learn div.course-block div.course-item.-selected-left {
+        left: -10%;
+    }
+
+    div.section-learn div.course-block div.course-item.-selected-right {
+        left: 55%;
+    }
+}
+
 
 div.section-learn div.course-block div.course-item.-selected {
     opacity: 1;
@@ -118,8 +205,15 @@ div.section-learn div.course-block div.course-item div.course-info {
     justify-content: flex-start;
 }
 
+@media screen and (max-width:575.98px) {
+    div.section-learn div.course-block div.course-item div.course-info {
+        padding: 10px;
+    }
+}
+
 div.section-learn div.course-block div.course-item div.course-info p.course-title {
     font-size: 1.5rem;
+    font-weight: 550;
     line-height: 42px;
     text-transform: capitalize;
     font-family: 'Futura';
@@ -130,14 +224,28 @@ div.section-learn div.course-block div.course-item div.course-info p.description
     line-height: 24px;
 }
 
+@media screen and (max-width:575.98px) {
+    div.section-learn div.course-block div.course-item div.course-info p.course-title {
+        font-size: 1.25rem;
+        line-height: 32px;
+    }
+}
+
 
 /*========== section-today 區域 ========== */
 
 div.main div.section-today {
-    padding: 60px 60px 54px 20px;
+    padding: 60px 20px;
     display: flex;
     justify-content: flex-end;
     position: relative;
+}
+
+@media screen and (max-width:991.98px) {
+    div.main div.section-today {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 div.main div.section-today div.left-info {
@@ -151,6 +259,16 @@ div.main div.section-today div.left-info {
     flex-direction: column;
     align-items: flex-start;
     gap: 60px
+}
+
+@media screen and (max-width:991.98px) {
+    div.main div.section-today div.left-info {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translateY(0);
+        width: 80%;
+    }
 }
 
 div.main div.section-today div.left-info h2 {
@@ -176,8 +294,14 @@ div.main div.section-today div.left-info div.product-info div.product-descriptio
     background: linear-gradient(270deg, rgba(200, 175, 146, 0.80) 0.24%, rgba(255, 255, 255, 0.00) 103.47%);
 }
 
-div.section-today div.left-info div.section-link {
-    padding-top: 28px;
+@media screen and (max-width:991.98px) {
+    div.main div.section-today div.left-info div.product-info div.product-description {
+        padding: 28px 8px;
+    }
+
+    div.section-today div.left-info div.section-link {
+        margin-top: -40px;
+    }
 }
 
 div.main div.section-today div.right-img {
@@ -185,6 +309,12 @@ div.main div.section-today div.right-img {
     width: 50%;
     position: relative;
     z-index: 100;
+}
+
+@media screen and (max-width:991.98px) {
+    div.main div.section-today div.right-img {
+        width: 80%;
+    }
 }
 
 div.main div.section-today div.right-img img {
@@ -204,6 +334,13 @@ div.main div.section-today div.right-img::before {
     left: -30px;
 }
 
+@media screen and (max-width:767.98px) {
+    div.main div.section-today div.right-img::before {
+        top: -20px;
+        left: -20px;
+    }
+}
+
 div.main div.section-today div.right-img::after {
     content: '';
     display: block;
@@ -214,6 +351,13 @@ div.main div.section-today div.right-img::after {
     position: absolute;
     bottom: -30px;
     right: -30px;
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-today div.right-img::after {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 /*========== section-journal 區域 ========== */
@@ -228,8 +372,14 @@ div.main div.section-journal div.journal-block {
     width: 100%;
     height: 100%;
     position: relative;
-    padding: 60px 60px;
-    min-height: 800px;
+    padding: 60px 60px 20px 60px;
+    /* min-height: 800px; */
+}
+
+@media screen and (max-width:575.98px) {
+    div.main div.section-journal div.journal-block {
+        padding: 60px 20px 20px 20px;
+    }
 }
 
 div.main div.section-journal div.journal-block div.journal-item {
@@ -238,10 +388,19 @@ div.main div.section-journal div.journal-block div.journal-item {
     justify-content: flex-end;
     align-items: center;
     opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-journal div.journal-block div.journal-item {
+        flex-direction: column;
+    }
 }
 
 div.main div.section-journal div.journal-block div.journal-item.active {
     opacity: 1;
+    position: relative;
 }
 
 div.main div.section-journal div.journal-block div.journal-item div.left-info {
@@ -255,7 +414,7 @@ div.main div.section-journal div.journal-block div.journal-item div.left-info {
     display: flex;
     flex-direction: column;
     color: var(--Grayish-orange);
-    padding: 48px 36px;
+    padding: 40px 32px;
     margin-right: -50px;
     z-index: 100;
 
@@ -263,8 +422,35 @@ div.main div.section-journal div.journal-block div.journal-item div.left-info {
     transition: 500ms transform ease-in;
 }
 
+@media screen and (max-width:991.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.left-info {
+        padding: 32px 20px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.left-info {
+        order: 2;
+        width: 100%;
+        margin-right: 0px;
+        transform: translateY(-25%);
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.left-info {
+        padding: 20px 12px;
+    }
+}
+
 div.main div.section-journal div.journal-block div.journal-item.active div.left-info {
     transform: translateX(0);
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-journal div.journal-block div.journal-item.active div.left-info {
+        transform: translateY(0%);
+    }
 }
 
 div.main div.section-journal div.journal-block div.journal-item div.left-info div.journal-title {
@@ -272,6 +458,18 @@ div.main div.section-journal div.journal-block div.journal-item div.left-info di
     font-weight: 500;
     line-height: 42px;
     text-transform: capitalize;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+@media screen and (max-width:575.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.left-info div.journal-title {
+        font-size: 1.75rem;
+        line-height: 32px;
+    }
 }
 
 div.main div.section-journal div.journal-block div.journal-item div.left-info div.journal-description {
@@ -286,6 +484,12 @@ div.main div.section-journal div.journal-block div.journal-item div.left-info di
     overflow: hidden;
 }
 
+@media screen and (max-width:1199.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.left-info div.journal-description {
+        -webkit-line-clamp: 3;
+    }
+}
+
 div.main div.section-journal div.journal-block div.journal-item div.left-info div.journal-link {
     font-size: 1.2rem;
     font-weight: 500;
@@ -293,6 +497,12 @@ div.main div.section-journal div.journal-block div.journal-item div.left-info di
     text-transform: uppercase;
     padding-top: 48px;
     text-align: center;
+}
+
+@media screen and (max-width:991.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.left-info div.journal-link {
+        padding-top: 4px;
+    }
 }
 
 div.main div.section-journal div.journal-block div.journal-item div.left-info div.journal-link a {
@@ -304,6 +514,13 @@ div.main div.section-journal div.journal-block div.journal-item div.left-info di
 div.main div.section-journal div.journal-block div.journal-item div.right-img {
     width: 50%;
     overflow: hidden;
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.right-img {
+        order: 1;
+        width: 100%;
+    }
 }
 
 div.main div.section-journal div.journal-block div.journal-item div.right-img img {
@@ -318,11 +535,20 @@ div.main div.section-journal div.journal-block div.journal-item.active div.right
     transform: translateX(0);
 }
 
-div.main div.section-journal div.journal-block div.item-btn {
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
+@media screen and (max-width:767.98px) {
+    div.main div.section-journal div.journal-block div.journal-item div.right-img img {
+        width: 100%;
+    }
 }
+
+div.main div.section-journal div.item-btn {
+    /* position: absolute;
+    bottom: 15%;
+    right: 5%; */
+    z-index: 100;
+    text-align: center;
+}
+
 
 
 /*========== section-location 區域 ========== */
@@ -343,12 +569,31 @@ div.main div.location-block {
     justify-content: center;
 }
 
+@media screen and (max-width:767.98px) {
+    div.main div.location-block {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 div.main div.section-locaton div.location-block div.location-img {
     grid-area: location-img;
 }
 
+@media screen and (max-width:767.98px) {
+    div.main div.section-locaton div.location-block div.location-img {
+        /* display: none; */
+    }
+}
+
 div.main div.section-locaton div.location-block div.location-img img {
     width: 100%;
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-locaton div.location-block div.location-img img {
+        vertical-align: bottom;
+    }
 }
 
 div.main div.section-locaton div.location-block div.location-map {
@@ -363,6 +608,14 @@ div.main div.section-locaton div.location-block div.location-map iframe {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-locaton div.location-block div.location-map iframe {
+        position: static;
+        height: 300px;
+        vertical-align: bottom;
+    }
 }
 
 div.main div.section-locaton div.location-block div.location-info {
@@ -382,16 +635,44 @@ div.main div.section-locaton div.location-block div.location-info div.info-block
     width: 100%;
 }
 
+@media screen and (max-width:991.98px) {
+    div.main div.section-locaton div.location-block div.location-info div.info-block {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.main div.section-locaton div.location-block div.location-info div.info-block {
+        padding: 12px;
+        position: relative;
+        transform: translate(0%, 0%);
+        top: 0;
+        left: 0;
+    }
+}
 
 div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item {
     display: flex;
     padding-top: 16px;
 }
 
+@media screen and (max-width:991.98px) {
+    div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item {
+        padding-top: 8px;
+        font-size: 0.9rem;
+    }
+}
+
 div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item div.title {
     flex-basis: 145px;
     flex-shrink: 0;
     text-transform: capitalize;
+}
+
+@media screen and (max-width:991.98px) {
+    div.main div.section-locaton div.location-block div.location-info div.info-block div.info-item div.title {
+        flex-basis: 100px;
+    }
 }
 
 /*========== section-location for about-us 區域 ========== */

@@ -74,13 +74,20 @@ svg.-b path {
 
 div.first-section,
 div.high-quality {
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 /*========== first-section 區域 ========== */
 div.first-section {
-    height: 100vh;
+    height: 1000px;
+}
+
+@media screen and (max-width:575.98px) {
+    div.first-section {
+        height: auto;
+    }
 }
 
 /*========== title-section 區域 ========== */
@@ -94,6 +101,13 @@ div.title-section {
     margin: 0 auto;
 }
 
+@media screen and (max-width:575.98px) {
+    div.title-section {
+        padding-top: 150px;
+        padding-left: 50px;
+    }
+}
+
 div.title-section h2 {
     font-size: 3rem;
 }
@@ -103,12 +117,26 @@ div.banner-section {
     margin-top: 80px;
 }
 
+@media screen and (max-width:575.98px) {
+    div.banner-section {
+        margin-top: 40px;
+    }
+}
+
 div.banner-section div.image {
-    width: 1100px;
+    width: 90%;
     height: 400px;
     border-radius: 0px 100px 0px 0px;
     overflow: hidden;
     position: relative;
+}
+
+@media screen and (max-width:575.98px) {
+    div.banner-section div.image {
+        width: 100%;
+        height: 500px;
+        margin-right: 10px;
+    }
 }
 
 div.banner-section div.image img {
@@ -119,14 +147,28 @@ div.banner-section div.image img {
 }
 
 div.banner-section div.slogan {
-    display: block;
-    height: 20vh;
     color: var(--Dark-cyan);
     text-align: right;
     font-size: 4rem;
-    line-height: 18vh;
+    padding-top: 60px;
+    line-height: 80px;
     font-family: Limelight;
+    display: block;
+}
 
+@media screen and (max-width:1199.98px) {
+    div.banner-section div.slogan {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.banner-section div.slogan {
+        font-size: 3rem;
+        padding-top: 40px;
+        line-height: 52px;
+        font-family: Limelight;
+    }
 }
 
 /*========== high-quality 區域 ========== */
@@ -138,19 +180,54 @@ div.high-quality {
     flex-direction: column;
 }
 
+@media screen and (max-width:767.98px) {
+    div.high-quality {
+        margin-bottom: 200px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.high-quality {
+        overflow: hidden;
+        margin-bottom: 0px;
+        margin-top: 60px;
+    }
+}
+
 div.high-quality div.detail-info {
-    width: 800px;
+    width: 62%;
     color: var(--Dark-cyan);
     position: relative;
+}
+
+@media screen and (max-width:767.98px) {
+    div.high-quality div.detail-info {
+        position: relative;
+        width: 90%;
+        z-index: 100;
+    }
 }
 
 div.high-quality div.detail-info div.section-bg {
     position: absolute;
     z-index: -100;
-    width: 550px;
+    width: 80%;
     height: 560px;
     border-radius: 0px 100px 0px 0px;
     background: linear-gradient(180deg, #BECCCF 0%, rgba(217, 217, 217, 0.00) 90.19%);
+}
+
+
+/* orange色系樣式 */
+div.high-quality.orange div.detail-info div.section-bg {
+    border-radius: 0px 100px 0px 0px;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.00) 0%, #F8DBC0 90.19%);
+
+}
+
+div.high-quality.orange div.detail-info {
+    color: var(--Very-dark-orange);
 }
 
 div.high-quality div.detail-info div.title {
@@ -160,6 +237,14 @@ div.high-quality div.detail-info div.title {
     line-height: 42px;
 }
 
+@media screen and (max-width:767.98px) {
+    div.high-quality div.detail-info div.title {
+        padding-top: 60px;
+        padding-left: 48px;
+        line-height: 36px;
+    }
+}
+
 div.high-quality div.detail-info div.description {
     padding-left: 100px;
     line-height: 42px;
@@ -167,23 +252,77 @@ div.high-quality div.detail-info div.description {
     padding-top: 1rem;
 }
 
+@media screen and (max-width:767.98px) {
+    div.high-quality div.detail-info div.description {
+        padding-left: 48px;
+        line-height: 36px;
+    }
+}
+
 div.high-quality div.high-quality-img-h {
     margin-left: 60px;
     margin-top: 96px;
+    width: 56%;
+}
+
+@media screen and (max-width:991.98px) {
+    div.high-quality div.high-quality-img-h {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.high-quality div.high-quality-img-h {
+        margin-left: 30px;
+        margin-top: 48px;
+        width: 64%;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.high-quality div.high-quality-img-h {
+        width: 100%;
+    }
 }
 
 div.high-quality div.high-quality-img-h img {
-    width: 800px;
+    width: 100%;
+    vertical-align: bottom;
 }
 
 div.high-quality div.high-quality-img-v {
     position: absolute;
     top: 40px;
     right: 0;
+    width: 36%;
+    overflow: hidden;
 }
 
 div.high-quality div.high-quality-img-v img {
-    width: 500px;
+    width: 100%;
+}
+
+@media screen and (max-width:991.98px) {
+    div.high-quality div.high-quality-img-v {
+        top: 120px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.high-quality div.high-quality-img-v {
+        top: auto;
+        bottom: -120px;
+    }
+
+    div.high-quality div.high-quality-img-v img {
+        vertical-align: bottom;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.high-quality div.high-quality-img-v {
+        display: none;
+    }
 }
 
 div.high-quality.-reverse {
@@ -191,24 +330,49 @@ div.high-quality.-reverse {
     padding-bottom: 200px;
 }
 
+@media screen and (max-width:991.98px) {
+    div.high-quality.-reverse {
+        padding-bottom: 100px;
+    }
+}
+
 div.high-quality.-reverse div.detail-info {
     order: 3;
     color: var(--Very-dark-orange);
+    position: relative;
 }
 
 div.high-quality.-reverse div.detail-info div.section-bg {
     position: absolute;
+    top: 36px;
+    right: 0;
     z-index: -100;
-    width: 800px;
-    height: 450px;
-    border-radius: 0px 0px 0px 100px;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, #F8DBC0 90.19%);
+    width: 80%;
+    height: 500px;
+    border-radius: 100px 0px 0px 0px;
+    background: linear-gradient(0deg, rgba(217, 217, 217, 0.00) 0%, #F8DBC0 90.19%);
+}
+
+div.high-quality.-reverse div.detail-info div.title {
+    padding-left: 50px;
+}
+
+div.high-quality.-reverse div.detail-info div.description {
+    padding: 0 50px;
 }
 
 div.high-quality.-reverse div.high-quality-img-h {
     order: 2;
     margin-top: 0px;
     margin-right: 60px;
+}
+
+@media screen and (max-width:991.98px) {
+    div.high-quality.-reverse div.high-quality-img-h {
+        order: 2;
+        margin-top: 0px;
+        margin-right: 40px;
+    }
 }
 
 div.high-quality.-reverse div.high-quality-img-v {

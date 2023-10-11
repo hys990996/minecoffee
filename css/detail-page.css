@@ -11,6 +11,7 @@ div.main {
 div.detail-section,
 div.form-section,
 div.related-section {
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -28,6 +29,14 @@ button.next-step {
     border-radius: 100px;
     text-transform: uppercase;
 }
+
+@media screen and (max-width:575.98px) {
+    div.detail-section div.detail-innerblock div.left-side button.next-step {
+        width: 180px;
+    }
+}
+
+
 /* button.next-step {
     color: var(--Dark-orange);
     font-size: 1.25rem;
@@ -80,14 +89,31 @@ button.next-step:hover::after {
 
 /* ========== detail-innerblock 區域 ==========  */
 
-div.detail-innerblock{
+div.detail-innerblock {
     display: flex;
     align-items: flex-start;
     gap: 20px;
     max-height: 780px;
 }
 
+@media screen and (max-width:991.98px) {
+    div.detail-innerblock {
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+}
+
 /* ========== detail-section left區域 ==========  */
+div.detail-section div.detail-innerblock div.left-side {
+    width: 55%;
+}
+
+@media screen and (max-width:991.98px) {
+    div.detail-section div.detail-innerblock div.left-side {
+        width: 100%;
+    }
+}
+
 div.detail-section div.detail-innerblock div.left-side div.title {
     color: var(--Dark-cyan);
     font-size: 1.75rem;
@@ -103,9 +129,25 @@ div.detail-section div.detail-innerblock div.left-side div.content {
     margin-top: 16px;
 }
 
-div.detail-section div.detail-innerblock div.left-side div.content div.description{
+div.detail-section div.detail-innerblock div.left-side div.content div.description {
     max-height: 360px;
     overflow-y: scroll;
+}
+
+
+
+div.left-side div.content div.description::-webkit-scrollbar {
+    display: initial;
+    width: 3px;
+}
+
+div.left-side div.content div.description:-webkit-scrollbar-track {
+    background-color: var(--Grayish-orange);
+}
+
+div.left-side div.content div.description::-webkit-scrollbar-thumb {
+    background-color: var(--Dark-cyan);
+    border-radius: 100px;
 }
 
 div.detail-section div.detail-innerblock div.left-side div.content div.detail-info {
@@ -135,6 +177,12 @@ div.detail-section div.detail-innerblock div.left-side div.btn-section {
     margin-top: 80px;
 }
 
+@media screen and (max-width:575.98px) {
+    div.detail-section div.detail-innerblock div.left-side div.btn-section {
+        gap: 20px;
+    }
+}
+
 div.detail-section div.detail-innerblock div.left-side div.btn-section div.num-count {
     color: var(--Dark-orange);
     font-size: 1.25rem;
@@ -147,7 +195,13 @@ div.detail-section div.detail-innerblock div.left-side div.btn-section div.num-c
     align-items: center;
     border: 1px solid var(--Dark-orange);
     border-radius: 100px;
-    padding: 5px 0;
+    padding: 2px 0;
+}
+
+@media screen and (max-width:575.98px) {
+    div.detail-section div.detail-innerblock div.left-side div.btn-section div.num-count {
+        width: 150px;
+    }
 }
 
 div.detail-section div.detail-innerblock div.left-side div.btn-section div.num-count img {
@@ -158,21 +212,82 @@ div.detail-section div.detail-innerblock div.left-side div.btn-section div.num-c
 /* ========== detail-section right區域 ==========  */
 
 div.detail-section div.right-side {
-    flex-basis: 660px;
-    flex-shrink: 0;
+    /* flex-basis: 45%;
+    flex-shrink: 0; */
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    flex: 1;
 }
 
+@media screen and (max-width:1199.98px) {
+    div.detail-section div.right-side {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    div.detail-section div.right-side {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
 div.detail-section div.right-side div.img-list {
+    width: 100%;
     height: 780px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
+@media screen and (max-width:1199.98px) {
+    div.detail-section div.right-side div.img-list {
+        width: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    div.detail-section div.right-side div.img-list {
+        /* width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        display: flex;
+        gap: 8px;
+        position: relative; */
+        display: none;
+    }
+}
+
 div.detail-section div.right-side div.img-list img {
     width: 100%;
+    height: auto;
+}
+
+div.detail-section div.right-side div.img-list-m {
+    display: none;
+}
+
+@media screen and (max-width:991.98px) {
+    div.detail-section div.right-side div.img-list-m {
+        display: block;
+        width: calc(100vw - 40px);
+        overflow-x: scroll;
+    }
+}
+
+div.detail-section div.right-side div.img-list-m div.list-block {
+    position: relative;
+    display: flex;
+    gap: 8px;
+}
+
+div.detail-section div.right-side div.img-list-m img {
+    width: 100%;
+    height: auto;
+
 }
 
 div.detail-section div.right-side ul.samllimg-list {
@@ -182,8 +297,40 @@ div.detail-section div.right-side ul.samllimg-list {
     gap: 8px;
 }
 
+@media screen and (max-width:991.98px) {
+    div.detail-section div.right-side ul.samllimg-list {
+        display: none;
+    }
+}
+
 div.detail-section div.right-side ul.samllimg-list>li img {
     width: 60px;
+}
+
+@media screen and (max-width:991.98px) {
+    div.detail-section div.right-side ul.samllimg-list>li {
+        height: 80px;
+        overflow: hidden;
+    }
+
+    div.detail-section div.right-side ul.samllimg-list>li img {
+        height: 100%;
+    }
+}
+
+div.detail-section div.right-side ul.samllimg-list-m {
+    display: none;
+}
+
+div.detail-section div.right-side ul.samllimg-list-m>li img {
+    width: 60px;
+}
+
+@media screen and (max-width:991.98px) {
+    div.detail-section div.right-side ul.samllimg-list-m {
+        display: flex;
+        gap: 8px;
+    }
 }
 
 div.detail-section div.right-side ul.samllimg-list>li.imgItem.show img::before {
@@ -199,8 +346,33 @@ div.detail-section div.right-side ul.samllimg-list>li.imgItem.show img::before {
 
 
 /* ========== related-section 區域 ==========  */
-div.related-section{
+div.related-section {
     padding-top: 120px;
+}
+
+@media screen and (max-width:1199.98px) {
+    div.related-section {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+    div.related-section {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.related-section {
+        padding-top: 40px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.related-section {
+        padding-top: 32px;
+    }
 }
 
 div.related-section div.section-title {
@@ -208,10 +380,25 @@ div.related-section div.section-title {
     font-weight: 600;
 }
 
+@media screen and (max-width:767.98px) {
+    div.related-section div.slider {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+
 div.related-section div.card-list {
     display: flex;
     justify-content: center;
     padding: 40px;
+}
+
+@media screen and (max-width:767.98px) {
+    div.related-section div.card-list {
+        display: inline-flex;
+        padding: 20px 0;
+    }
 }
 
 div.related-section div.card-list div.card-item {
@@ -219,19 +406,38 @@ div.related-section div.card-list div.card-item {
     margin-right: 24px;
 }
 
+div.related-section div.card-list div.card-item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+@media screen and (max-width:991.98px) {
+    div.related-section div.card-list div.card-item {
+        width: calc((100% - 24px)/3);
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    div.related-section div.card-list div.card-item {
+        width: 300px;
+        margin-right: 12px;
+    }
+}
+
+
 div.related-section div.card-list div.card-item div.card-img {
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     overflow: hidden;
     position: relative;
 }
 
 div.related-section div.card-list div.card-item div.card-img img {
     width: 100%;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     transition: transform 500ms;
 }
 
@@ -250,6 +456,14 @@ div.related-section div.card-list div.card-item div.card-info div.title {
     font-weight: 500;
     line-height: 32px;
     border-bottom: 1px solid var(--Dark-cyan);
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:767.98px) {
+    div.related-section div.card-list div.card-item div.card-info div.title {
+        font-size: 1.15rem;
+        line-height: 24px;
+    }
 }
 
 div.related-section div.card-list div.card-item div.card-info div.price {
@@ -263,7 +477,8 @@ div.related-section div.section-link {
 /* ========== related-section 區域 hover效果 ==========  */
 
 div.related-section div.card-list div.card-item:hover a img {
-    transform: translate(-50%, -50%) scale(1.1);
+    /* transform: translate(-50%, -50%) scale(1.1); */
+    transform: scale(1.1);
 }
 
 div.related-section div.card-list div.card-item:hover div.card-img::before {
@@ -271,11 +486,17 @@ div.related-section div.card-list div.card-item:hover div.card-img::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 100;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+@media screen and (max-width:991.98px) {
+    div.related-section div.card-list div.card-item:hover div.card-img::before {
+        letter-spacing: 0;
+    }
 }
 
 div.related-section div.card-list div.card-item:hover div.card-img::after {
@@ -285,8 +506,14 @@ div.related-section div.card-list div.card-item:hover div.card-img::after {
     width: 100%;
     height: 400px;
     opacity: 0.25;
+    top: 0;
+    left: 0;
 }
 
 div.related-section div.card-list div.card-item:hover div.card-info {
     color: var(--Dark-orange);
+}
+
+div.related-section div.card-list div.card-item:hover div.card-info div.title {
+    border-bottom: 1px solid var(--Dark-orange);
 }

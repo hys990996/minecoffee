@@ -9,7 +9,8 @@ div.main {
 }
 
 div.member-section {
-    max-width: 1400px;
+    /* max-width: 1400px; */
+    width: 100%;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -22,6 +23,30 @@ div.order-list {
     flex-direction: column;
 }
 
+@media screen and (max-width:1199.98px) {
+
+    div.member-profile,
+    div.order-list {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:991.98px) {
+
+    div.member-profile,
+    div.order-list {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+
+    div.member-profile,
+    div.order-list {
+        width: 100%;
+    }
+}
+
 div.member-data,
 div.order-data {
     display: flex;
@@ -32,6 +57,15 @@ div.order-data {
     text-transform: capitalize;
 }
 
+@media screen and (max-width:767.98px) {
+
+    div.member-data,
+    div.order-data {
+        font-size: 1.1rem;
+        line-height: 24px;
+    }
+}
+
 div.member-data div.title,
 div.order-data div.title {
     color: var(--Dark-orange);
@@ -39,6 +73,26 @@ div.order-data div.title {
     border-right: 1px solid var(--Dark-orange);
     flex-basis: 160px;
     flex-shrink: 0;
+}
+
+@media screen and (max-width:991.98px) {
+
+    div.member-data div.title,
+    div.order-data div.title {
+        flex-basis: 110px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.order-data div.title {
+        flex-basis: 100px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.member-data div.title {
+        flex-basis: 80px;
+    }
 }
 
 div.member-data div.value,
@@ -68,6 +122,12 @@ div.member-data {
     gap: 52px;
 }
 
+@media screen and (max-width:575.98px) {
+    div.member-data {
+        gap: 36px;
+    }
+}
+
 
 /* ========== order-list 處理區域 ==========  */
 
@@ -80,12 +140,38 @@ div.order-list div.order {
     padding: 32px 0 20px 0;
 }
 
-div.order-list div.order div.order-img {
+@media screen and (max-width:767.98px) {
+
+    div.order-list div.order {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+
+    div.order-list div.order {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 8px;
+        padding: 20px 0;
+    }
+}
+
+div.order-list div.order div.order-img object {
     width: 100px;
     height: 100px;
-    background-image: url('../images/common/order.svg');
+    /* background-image: url('../images/common/order.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
+}
+
+@media screen and (max-width:767.98px) {
+
+    div.order-list div.order div.order-img object {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
 }
 
 div.order-list div.order div.order-info {
@@ -95,10 +181,29 @@ div.order-list div.order div.order-info {
     gap: 12px;
 }
 
+@media screen and (max-width:991.98px) {
+    div.order-list div.order div.order-info {
+        gap: 8px;
+    }
+}
+
 div.order-list div.order div.order-info div.order-data {
     gap: 20px;
 }
 
+@media screen and (max-width:575.98px) {
+    div.order-list div.order div.order-info div.order-data {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width:575.98px) {
+    div.order-list div.order p.see-more {
+        grid-column: 1 / 3;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 div.order-list div.order a {
     text-decoration: none;
@@ -108,4 +213,13 @@ div.order-list div.order a {
     padding: 0 12px;
     border-radius: 100px;
     background-color: var(--Dark-orange);
+    white-space: nowrap;
+}
+
+@media screen and (max-width:767.98px) {
+
+    div.order-list div.order a {
+        line-height: 32px;
+        text-align: center;
+    }
 }

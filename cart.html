@@ -19,6 +19,14 @@
 
 <body>
     <header class="header bg-Grayishorange" id="header">
+        <div class="hamburger-btn Dark-orange">
+            <div class="hamburger-logo">
+                <a href="./index.html">
+                    <img id="header-logo-img-m" src="./images/logo/logo_color.svg" alt="header-logo">
+                </a>
+            </div>
+            <span class="hamburger-icon"></span>
+        </div>
         <div class="header-block">
             <div class="header-logo">
                 <a href="./index.html">
@@ -48,16 +56,17 @@
         </div>
         <div class="cart-section">
             <div class="cart-title">
-                <h3>cart </h3>
+                <h3>shopping cart </h3>
             </div>
             <div class="cart-list">
                 <div class="left-items">
                     <div class="product-items">
                         <div class="subtitle">Products</div>
                         <div class="item">
-                            <button><img src="./images/common/close.svg" alt="close icon"></button>
+                            <button><object type="image/svg+xml" data="./images/common/close.svg"></object></button>
                             <div class="item-detail">
-                                <img src="./images/common/product.svg" alt="product item's image">
+                                <object type="image/svg+xml" data="./images/common/product.svg"></object>
+                                <!-- <img class="item-img" src="./images/common/product.svg" alt="product item's image"> -->
                                 <span class="item-name">Colombia Cerrara Manor Anaerobic solarization</span>
                                 <span class="item-price">NT$450</span>
                                 <div class="num-count">
@@ -70,7 +79,7 @@
                         <div class="item">
                             <button><img src="./images/common/close.svg" alt="close icon"></button>
                             <div class="item-detail">
-                                <img src="./images/common/product.svg" alt="product item's image">
+                                <object type="image/svg+xml" data="./images/common/product.svg"></object>
                                 <span class="item-name">Ethiopia Guji Chillisha</span>
                                 <span class="item-price">NT$500</span>
                                 <div class="num-count">
@@ -86,7 +95,7 @@
                         <div class="item">
                             <button><img src="./images/common/close.svg" alt="close icon"></button>
                             <div class="item-detail">
-                                <img src="./images/common/product.svg" alt="product item's image">
+                                <object type="image/svg+xml" data="./images/common/course.svg"></object>
                                 <span class="item-name">
                                     Pour Over Coffee Class
                                     <button id="editBtn"><img src="./images/common/edit.svg" alt="edit icon"></button>
@@ -102,7 +111,7 @@
                                         <h4>Registration information</h4>
                                     </div>
                                     <div class="accordion-section" id="accordion">
-                                        <div class="accordion-item -Light-grayish-orange">
+                                        <div class="accordion-item -Lightbox">
                                             <input type="checkbox" id="cd1">
                                             <label for="cd1" data-name="Wang Siao Ming">
                                                 <img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
@@ -143,7 +152,7 @@
                                             </div>
                                             <button id="saveBtn">Save</button>
                                         </div>
-                                        <div class="accordion-item -Light-grayish-orange">
+                                        <div class="accordion-item -Lightbox">
                                             <input type="checkbox" id="cd2">
                                             <label for="cd2" data-name="Lin Siao Mia">
                                                 <img src="./images/common/user-icon.svg" alt="icon" class="user-icon">
@@ -213,7 +222,7 @@
                     </div>
                     <div class="subtitle">
                         <div class="row-name">Course Count</div>
-                        <div class="row-value">3</div>
+                        <div class="row-value">3 class</div>
                     </div>
                     <div class="count">
                         <div class="row-name">Subtotal</div>
@@ -224,7 +233,7 @@
                         <div class="row-value">$0</div>
                     </div>
                     <div class="total">
-                        <div class="row-name">Grand Toazl</div>
+                        <div class="row-name">Grand Total</div>
                         <div class="row-value">$1,550</div>
                     </div>
                     <button class="check-out">check out</button>
@@ -235,38 +244,41 @@
             <div class="section-title">
                 <h4>You may also like</h4>
             </div>
-            <div class="card-list">
-                <div class="card-item">
-                    <a href="">
-                        <div class="card-img"><img src="./images/product-detail/related-product/product01.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="title">Ethiopia Guji Uraga Red Honey G1</div>
-                            <div class="price">Light｜Floral｜$450｜250G</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-item">
-                    <a href="">
-                        <div class="card-img">
-                            <img src="./images/product-detail/related-product/product01.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="title">Ethiopia Guji Hambella Carbonic Natural</div>
-                            <div class="price">Light｜Fruity｜$450｜250G</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-item">
-                    <a href="">
-                        <div class="card-img">
-                            <img src="./images/product-detail/related-product/product01.jpg" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="title">Ethiopia Yirgacheffe Gotiti Natural</div>
-                            <div class="price">Light｜Fruity｜$450｜250G</div>
-                        </div>
-                    </a>
+            <div class="slider">
+                <div class="card-list">
+                    <div class="card-item">
+                        <a href="">
+                            <div class="card-img"><img src="./images/product-detail/related-product/product01-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Ethiopia Guji Uraga Red Honey G1</div>
+                                <div class="price">Light｜Floral｜$450｜250G</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-item">
+                        <a href="">
+                            <div class="card-img">
+                                <img src="./images/course-detail/related-course/course-01.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Cofee Latte Art Beginner class</div>
+                                <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-item">
+                        <a href="">
+                            <div class="card-img">
+                                <img src="./images/product-detail/related-product/product01-1.jpg" alt="">
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Ethiopia Yirgacheffe Gotiti Natural</div>
+                                <div class="price">Light｜Fruity｜$450｜250G</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -297,6 +309,7 @@
     <script src="./js/footer.js"></script>
     <script src="./js/product-detail.js"></script>
     <script src="./js/lightbox.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 
 </html>

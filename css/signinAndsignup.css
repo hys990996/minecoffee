@@ -10,7 +10,7 @@ div.main {
 }
 
 div.sign-section {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -38,7 +38,7 @@ div.sign-form input,
 div.sign-form p,
 div.sign-form button,
 div.sign-form div.fullname {
-    width: 20%;
+    width: 300px;
     margin: 0 auto;
 }
 
@@ -50,7 +50,8 @@ div.sign-form button {
     text-transform: uppercase;
 }
 
-div.sign-form input[type="text"] {
+div.sign-form input[type="text"],
+div.sign-form input[type="tel"] {
     border-color: transparent;
     padding: 4px 20px;
 }

@@ -13,10 +13,19 @@
     <link rel="stylesheet" href="./css/common/breadcrumbs.css">
     <link rel="stylesheet" href="./css/detail-page.css">
     <link rel="stylesheet" href="./css/registerform.css">
+    <script src="./js/jQuery/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
     <header class="header bg-Grayishorange" id="header">
+        <div class="hamburger-btn Dark-orange">
+            <div class="hamburger-logo">
+                <a href="./index.html">
+                    <img id="header-logo-img-m" src="./images/logo/logo_color.svg" alt="header-logo">
+                </a>
+            </div>
+            <span class="hamburger-icon"></span>
+        </div>
         <div class="header-block">
             <div class="header-logo">
                 <a href="./index.html">
@@ -42,14 +51,14 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./course-list.html">learn</a></li>
-                <li><a href="">POUR OVER COFFEE CLASS</a></li>
+                <li><a href="">Pour over coffee class</a></li>
             </ul>
         </div>
         <div class="detail-section">
             <div class="detail-innerblock">
                 <div class="left-side">
                     <div class="title">
-                        <h3>POUR OVER COFFEE CLASS</h3>
+                        <h3>pour over coffee class</h3>
                     </div>
                     <div class="content">
                         <div class="description">
@@ -99,9 +108,19 @@
                         <img src="./images/course-detail/course-1/image01.png" alt="">
                         <img src="./images/course-detail/course-1/image02.png" alt="">
                     </div>
+                    <div class="img-list-m">
+                        <div class="list-block">
+                            <img src="./images/course-detail/course-1/image01-2.png" alt="">
+                            <img src="./images/course-detail/course-1/image02-2.png" alt="">
+                        </div>
+                    </div>
                     <ul class="samllimg-list">
                         <li class="imgItem show"><img src="./images/course-detail/course-1/image01.png" alt=""></li>
                         <li class="imagItem"><img src="./images/course-detail/course-1/image02.png" alt=""></li>
+                    </ul>
+                    <ul class="samllimg-list-m">
+                        <li class="imgItem show"><img src="./images/course-detail/course-1/image01-2.png" alt=""></li>
+                        <li class="imagItem"><img src="./images/course-detail/course-1/image02-2.png" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -161,40 +180,43 @@
             <div class="section-title">
                 <h4>Related Course</h4>
             </div>
-            <div class="card-list">
-                <div class="card-item">
-                    <a href="">
-                        <div class="card-img"><img src="./images/course-detail/related-course/course-01.png" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="title">COFFEE LATTE ART BEGINNER CLASS</div>
-                            <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-item">
-                    <a href="">
-                        <div class="card-img">
-                            <img src="./images/course-detail/related-course/course-01.png" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="title">COFFEE LATTE ART BEGINNER CLASS</div>
-                            <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-item">
-                    <a href="">
-                        <div class="card-img">
-                            <img src="./images/course-detail/related-course/course-01.png" alt="">
-                        </div>
-                        <div class="card-info">
-                            <div class="title">COFFEE LATTE ART BEGINNER CLASS</div>
-                            <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
-                        </div>
-                    </a>
+            <div class="slider">
+                <div class="card-list">
+                    <div class="card-item">
+                        <a href="">
+                            <div class="card-img"><img src="./images/course-detail/related-course/course-01.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Cofee Latte Art Beginner class</div>
+                                <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-item">
+                        <a href="">
+                            <div class="card-img">
+                                <img src="./images/course-detail/related-course/course-01.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Cofee Latte Art Beginner class</div>
+                                <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-item">
+                        <a href="">
+                            <div class="card-img">
+                                <img src="./images/course-detail/related-course/course-01.png" alt="">
+                            </div>
+                            <div class="card-info">
+                                <div class="title">Cofee Latte Art Beginner class</div>
+                                <div class="price">2024/01/01｜ 10:00-12:00｜$450</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+
             <div class="section-link -lg">
                 <a href="./course-list.html">see more course</a>
             </div>
@@ -223,6 +245,8 @@
 
     <script src="./js/footer.js"></script>
     <script src="./js/course-detail.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

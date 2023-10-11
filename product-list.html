@@ -17,7 +17,15 @@
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="header -indexpage" id="header">
+        <div class="hamburger-btn">
+            <div class="hamburger-logo">
+                <a href="./index.html">
+                    <img id="header-logo-img-m" src="./images/logo/logo_white.svg" alt="header-logo">
+                </a>
+            </div>
+            <span class="hamburger-icon"></span>
+        </div>
         <div class="header-block">
             <div class="header-logo">
                 <a href="./index.html">
@@ -41,7 +49,11 @@
     <div class="main">
         <div class="kv-banner">
             <a href="">
-                <img src="./images/product-list/product-banner-1.png" alt="banner">
+                <picture>
+                    <source media="(min-width:991.98px)" srcset="../images/product-list/product-banner-1.png">
+                    <source media="(min-width: 565.98px)" srcset="../images/product-list/product-banner-1-2.png">
+                    <img src="../images/product-list/product-banner-1-3.png" class="ofc" alt="">
+                </picture>
                 <h1>products</h1>
             </a>
         </div>
@@ -211,6 +223,7 @@
     <script src="./js/header.js"></script>
     <script src="./js/tab.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/hamburger.js"></script>
 </body>
 
 </html>

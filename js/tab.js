@@ -23,4 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
     }
+
+    // let allCard = document.querySelectorAll('card-item');
+
+
+    // for (let i = 0; i < allCard.length; i++) {
+    //     allCard[i].addEventListener('touchstart', function () {
+    //         allCard[i].classList.add('-hover');
+    //         alert('toched');
+    //     }, false)
+    // }
 })
