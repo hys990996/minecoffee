@@ -399,9 +399,3 @@ div.right-summary button.check-out {
     border-radius: 100px;
     margin-top: 44px;
 }
-
-@media screen and (max-width:991.98px) {
-    div.right-summary button.check-out {
-        /* margin: 44px auto 0px auto; */
-    }
-}

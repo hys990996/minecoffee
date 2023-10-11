@@ -368,9 +368,6 @@ div.form-section div.accordion-section div.accordion-item.-Lightbox div.form-con
         width: 30px;
     }
 
-    div.form-section div.accordion-section div.accordion-item.-Lightbox input[type=checkbox]+label::after {
-        /* flex-basis: 65%; */
-    }
 }
 
 /*======== 處理saveBtn 區域 ====== */
