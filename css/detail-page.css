@@ -272,16 +272,22 @@ div.detail-section div.right-side div.img-list-m {
 
 @media screen and (max-width:991.98px) {
     div.detail-section div.right-side div.img-list-m {
+        display: block;
         width: calc(100vw - 40px);
-        display: flex;
-        gap: 8px;
         overflow-x: scroll;
     }
 }
 
+div.detail-section div.right-side div.img-list-m div.list-block {
+    position: relative;
+    display: flex;
+    gap: 8px;
+}
+
 div.detail-section div.right-side div.img-list-m img {
-    width: calc(100vw - 40px);
+    width: 100%;
     height: auto;
+
 }
 
 div.detail-section div.right-side ul.samllimg-list {
