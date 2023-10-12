@@ -56,6 +56,7 @@ div.tabContainer div.card-section {
 @media screen and (max-width:767.98px) {
     div.tabContainer div.card-section {
         flex-direction: column;
+        gap: 12px;
     }
 }
 
