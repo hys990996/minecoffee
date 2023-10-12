@@ -41,3 +41,27 @@ window.addEventListener('resize', function () {
         }
     }
 })
+
+window.addEventListener('scroll', function () {
+    let imagesH = document.getElementsByClassName("img-h")
+    let imagesV = document.getElementsByClassName("img-v")
+
+    for (let i = 0; i < imagesH.length; i++) {
+
+        let topH = imagesH[i].getBoundingClientRect().top
+        let topV = imagesV[i].getBoundingClientRect().top
+
+        if (topH < 350) {
+            imagesH[i].classList.add('fadein')
+        } else {
+            imagesH[i].classList.remove('fadein')
+        }
+
+        if (topV < 350) {
+            imagesV[i].classList.add('fadein')
+        } else {
+            imagesV[i].classList.remove('fadein')
+        }
+    }
+})
+
