@@ -46,6 +46,7 @@ div.detail-section div.datalist div.img-list {
     gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 
 div.detail-section div.datalist div.img-list a {
