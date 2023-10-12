@@ -6,6 +6,7 @@ document.addEventListener('scroll', function () {
     let headerBtn = document.querySelectorAll('div.header-button img')
     let hamburgerBtn = document.getElementsByClassName('hamburger-btn')[0]
     let scrollHeight = window.scrollY
+    let windowWidth = window.innerWidth
 
     //判斷header不包含Light-grayish-orange
     if (!header.classList.contains("Light-grayish-orange")) {
@@ -25,16 +26,20 @@ document.addEventListener('scroll', function () {
 
         } else { //滾動高度小於200時恢復header樣式
 
-            header.classList.remove("bg-Grayishorange", "_underline")
-            Array.from(liItem).forEach(element => {
-                element.classList.remove("scroll")
-            });
-            logoImg.setAttribute("src", "./images/logo/logo_white.svg")
-            logoImgM.setAttribute("src", "./images/logo/logo_white.svg")
-            headerBtn[0].setAttribute("src", "./images/common/cart.svg")
-            headerBtn[1].setAttribute("src", "./images/common/signin.svg")
+            // 判斷hambuger是否開啟，未開啟才恢復白字樣式
+            if (!hamburgerBtn.classList.contains("-on") || windowWidth > 992) {
+                header.classList.remove("bg-Grayishorange", "_underline")
+                Array.from(liItem).forEach(element => {
+                    element.classList.remove("scroll")
+                });
+                logoImg.setAttribute("src", "./images/logo/logo_white.svg")
+                logoImgM.setAttribute("src", "./images/logo/logo_white.svg")
+                headerBtn[0].setAttribute("src", "./images/common/cart.svg")
+                headerBtn[1].setAttribute("src", "./images/common/signin.svg")
 
-            hamburgerBtn.classList.remove("Dark-orange")
+                hamburgerBtn.classList.remove("Dark-orange")
+            }
+
         }
     }
 
