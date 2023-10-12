@@ -288,6 +288,12 @@ div.high-quality div.high-quality-img-h {
 div.high-quality div.high-quality-img-h img {
     width: 100%;
     vertical-align: bottom;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+div.high-quality div.high-quality-img-h img.fadein {
+    opacity: 1;
 }
 
 div.high-quality div.high-quality-img-v {
@@ -300,6 +306,12 @@ div.high-quality div.high-quality-img-v {
 
 div.high-quality div.high-quality-img-v img {
     width: 100%;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+div.high-quality div.high-quality-img-v img.fadein {
+    opacity: 1;
 }
 
 @media screen and (max-width:991.98px) {
